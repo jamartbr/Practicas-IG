@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/jaime/3532-3531/Universidad/IG/raiz/builds/linux
+CMAKE_SOURCE_DIR = /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/cmake
+CMAKE_BINARY_DIR = /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/cmake/CMakeFiles /media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/cmake//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/cmake/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,545 +142,545 @@ release_exe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/build
 .PHONY : release_exe/fast
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.o: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.i: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.s: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.o: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.i: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.s: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.o: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.i: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.s: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.o: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.i: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.s: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.o: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.i: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.s: media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.o: media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.i: media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.s: media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.o: media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.i: media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.s: media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/camara.o: media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/camara.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/camara.i: media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/camara.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/camara.s: media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/camara.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/escena.o: media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/escena.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/escena.i: media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/escena.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/escena.s: media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/escena.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.o: media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.i: media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.s: media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.o: media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.i: media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.s: media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.o: media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.i: media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.s: media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/main.o: media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/main.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/main.i: media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/main.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/main.s: media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/main.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.o: media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.i: media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.s: media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.o: media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.i: media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.s: media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.o: media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.i: media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.s: media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.o: media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.i: media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.s: media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.o: media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.i: media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.s: media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.o: media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.i: media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.s: media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.o: media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.o
 
 # target to build an object file
-media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.i: media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.i
 
 # target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.i
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.i
 
-media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.s: media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.s
 
 # target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.s
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.s
 
 # Help Target
 help:
@@ -692,66 +692,66 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... debug_exe"
 	@echo "... release_exe"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/camara.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/camara.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/camara.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/escena.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/escena.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/escena.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/main.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/main.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/main.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/animacion.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.s"
 .PHONY : help
 
 

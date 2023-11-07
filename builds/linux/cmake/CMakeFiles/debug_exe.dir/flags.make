@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp
+CXX_INCLUDES = -I/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp
 
 CXX_FLAGS =  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g
 

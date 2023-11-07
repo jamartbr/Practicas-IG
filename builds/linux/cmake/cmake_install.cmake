@@ -1,4 +1,4 @@
-# Install script for directory: /media/jaime/3532-3531/Universidad/IG/raiz/builds/linux
+# Install script for directory: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/cmake/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
