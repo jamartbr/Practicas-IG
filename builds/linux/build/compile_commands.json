@@ -1,0 +1,202 @@
+[
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/animacion.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/aplicacion-ig.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/camara.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/escena.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-raton.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/eventos-teclado.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/grafo-escena.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/main.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-ind.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/malla-revol.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/materiales-luces.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/modelo-jer.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/objeto3d.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/seleccion.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/src/vaos-vbos.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/cauce.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/fbo.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/ig-aux.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-jpg.cpp"
+},
+{
+  "directory": "/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build",
+  "command": "/usr/bin/c++  -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../src -I/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp.o -c /media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp",
+  "file": "/media/jaime/3532-3531/Universidad/IG/raiz/materiales/src-cpp/lector-ply.cpp"
+}
+]

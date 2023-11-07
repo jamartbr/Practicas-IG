@@ -1,0 +1,4 @@
+/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build/CMakeFiles/debug_exe.dir
+/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build/CMakeFiles/release_exe.dir
+/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build/CMakeFiles/edit_cache.dir
+/media/jaime/3532-3531/Universidad/IG/raiz/builds/linux/build/CMakeFiles/rebuild_cache.dir
