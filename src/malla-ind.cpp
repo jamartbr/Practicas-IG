@@ -131,7 +131,7 @@ void MallaInd::visualizarGL( )
       if (triangulos.size()!=0)
          dvao->agregar(new DescrVBOInds(triangulos));
       if (col_ver.size()!=0)
-         dvao->agregar( new DescrVBOAtribs( ind_atrib_colores, col_ver ));
+         dvao->agregar(new DescrVBOAtribs(ind_atrib_colores, col_ver));
       if (nor_ver.size()!=0)
          dvao->agregar(new DescrVBOAtribs(ind_atrib_normales, nor_ver));
       if (cc_tt_ver.size()!=0)

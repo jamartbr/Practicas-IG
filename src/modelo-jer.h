@@ -28,13 +28,10 @@ class Flexo : public NodoGrafoEscena
 {
    protected:
       glm::mat4 * pm_rot_inf = nullptr;
-      float rot_inf = 0.0f;
-
       glm::mat4 * pm_rot_sup = nullptr;
-      float rot_sup = 0.0f;
-
       glm::mat4 * pm_rot_cabeza = nullptr;
-      float rot_cabeza = 0.0f;
+      glm::mat4 * pm_tras_pinza = nullptr;
+      glm::mat4 * pm_rot_pinza = nullptr;
 
    public:
       Flexo() ;
@@ -45,25 +42,31 @@ class Flexo : public NodoGrafoEscena
 class Base : public NodoGrafoEscena
 {
    public:
-      Base() ;
+      Base(glm::mat4 * &pm_matriz_tras, glm::mat4 * &pm_matriz_rot) ;
+} ;
+
+class Pinza : public NodoGrafoEscena
+{
+   public:
+      Pinza(glm::mat4 * &pm_matriz_tras, glm::mat4 * &pm_matriz_rot) ;
 } ;
 
 class CuerpoInf : public NodoGrafoEscena
 {
    public:
-      CuerpoInf() ;
+      CuerpoInf(glm::mat4 * &pm_matriz) ;
 } ;
 
 class CuerpoSup : public NodoGrafoEscena
 {
    public:
-      CuerpoSup() ;
+      CuerpoSup(glm::mat4 * &pm_matriz) ;
 } ;
 
 class Cabeza : public NodoGrafoEscena
 {
    public:
-      Cabeza() ;
+      Cabeza(glm::mat4 * &pm_matriz) ;
 } ;
 
 class Bombilla : public NodoGrafoEscena

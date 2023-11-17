@@ -25,37 +25,40 @@ using namespace std ;
 using namespace glm ;
 
 Flexo::Flexo() {
-    agregar(new Base());
-    agregar(translate(vec3(0.0,0.15,0.0)));
-    int ind1 = agregar(rotate(radians(rot_inf),vec3(0.0,0.0,1.0)));
-    agregar(new CuerpoInf());
-    int ind2 = agregar(rotate(radians(rot_sup),vec3(0.0,0.0,1.0)));
-    agregar(new CuerpoSup());
-    int ind3 = agregar(rotate(radians(rot_sup),vec3(1.0,0.0,0.0)));
-    agregar(new Cabeza());
-
-    pm_rot_inf = leerPtrMatriz(ind1);
-    pm_rot_sup = leerPtrMatriz(ind2);
-    pm_rot_cabeza = leerPtrMatriz(ind3);
+    // agregar(new Pinza(pm_rot_pinza));
+    agregar(new Base(pm_tras_pinza, pm_rot_pinza));
+    agregar(translate(vec3(0.0,0.10,0.0)));
+    agregar(new CuerpoInf(pm_rot_inf));
+    agregar(new CuerpoSup(pm_rot_sup));
+    agregar(new Cabeza(pm_rot_cabeza));
 }
 
 unsigned Flexo::leerNumParametros() const {
-    return 3;
+    return 5;
 }
 
 void Flexo::actualizarEstadoParametro(const unsigned iParam, const float t_sec) {
+    float v;
     switch(iParam) {
         case 0:
-            rot_inf += radians(60.0f) * sin(2*M_PI*t_sec);
-            *pm_rot_inf = (rotate(radians(rot_inf), vec3{ 0.0,0.0,1.0 }));
+            *pm_rot_inf = rotate(float(-M_PI/6)+float(M_PI/6)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,0.0,1.0 });
             break;
         case 1:
-            rot_sup += radians(90.0f) * sin(2*M_PI*t_sec);
-            *pm_rot_sup = (rotate(radians(rot_sup), vec3{ 0.0,0.0,1.0 }));
+            *pm_rot_sup = (*pm_rot_inf) * (translate(vec3(-0.68, 1.9, 0.0))) * 
+                            (rotate(float(M_PI/3)+float(M_PI/3)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,0.0,1.0 })) *
+                            (translate(vec3(0.68, -1.9, 0.0)));
             break;
         case 2:
-            rot_cabeza += radians(90.0f) * sin(2*M_PI*t_sec);
-            *pm_rot_cabeza = (rotate(radians(rot_cabeza), vec3{ 1.0,0.0,0.0 }));
+            *pm_rot_cabeza = (*pm_rot_sup) * (translate(vec3(-1.1,1.7,0.0))) * 
+                            (rotate(float(2*M_PI*0.2)*t_sec, vec3{ 1.0,1.0,0.0 })) *
+                            (translate(vec3(1.1,-1.7,0.0)));
+            break;
+        case 3:
+            v = 4 + 4 * sin( M_PI * 0.15 * t_sec*2);
+            *pm_tras_pinza = translate( glm::vec3( 0.0, -v, 0.0));
+            break;
+        case 4:
+            *pm_rot_pinza = rotate(float(2.5*M_PI)+float(2.5*M_PI)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,1.0,0.0 });
             break;
         default:
             break;
@@ -63,67 +66,109 @@ void Flexo::actualizarEstadoParametro(const unsigned iParam, const float t_sec) 
    
 }
 
-Base::Base() {
+Base::Base(glm::mat4 * &pm_matriz_tras, glm::mat4 * &pm_matriz_rot) {
     agregar(scale(vec3(1.0,0.2,1.0)));
-    agregar(new Semiesfera(18,50));
+    agregar(new Semiesfera(18,20));
     agregar(new Circulo());
+    agregar(translate(vec3(-0.25,-5.0,0.0)));
+    agregar(scale(vec3(0.2,1.0,0.2)));
+    agregar(new Pinza(pm_matriz_tras, pm_matriz_rot));
 }
 
-CuerpoInf::CuerpoInf() {
+Pinza::Pinza(glm::mat4 * &pm_matriz_tras, glm::mat4 * &pm_matriz_rot) {
+    agregar(new MallaTorre(5));
+
+    agregar(scale(vec3(2.0,0.25,1.0)));
+    agregar(translate(vec3(1.0,-1.0,0.5)));
+    agregar(new Cubo());
+
+    agregar(translate(vec3(0.5,-5.0,0.0)));
+    unsigned ind1 = agregar(translate(vec3(0.0,0.0,0.0)));
+    agregar(scale(vec3(0.1,20.0,0.2)));
+    agregar(new Cilindro(15,20));
+    agregar(new Circulo());
+
+    agregar(translate(vec3(0.0,1.0,0.0)));
+    agregar(scale(vec3(4.0,0.05,4.0)));
+    agregar(new Circulo());
+    agregar(new Cilindro(5,20));
+    agregar(translate(vec3(0.0,1.0,0.0)));
+    agregar(new Circulo());
+
+    unsigned ind2 = agregar(rotate(0.0f,vec3(0.0,1.0,0.0)));
+    agregar(translate(vec3(0.0,-20.0,0.0)));
+    agregar(scale(vec3(2.5,0.6,0.1875)));
+    agregar(rotate(radians(90.0f),vec3(0.0,0.0,-1.0)));
+    agregar(new Cilindro(10,20));
+    // agregar(translate(vec3(0.0,1.0,0.0)));
+    // agregar(new Circulo());
+
+    pm_matriz_tras = leerPtrMatriz(ind1);
+    pm_matriz_rot = leerPtrMatriz(ind2);
+}
+
+CuerpoInf::CuerpoInf(glm::mat4 * &pm_matriz) {
     ponerColor({1.0,0.0,0.0});
 
-    agregar(rotate(radians(10.0f),vec3(0.0,0.0,1.0)));
+    unsigned ind = agregar(rotate(0.0f,vec3(0.0,0.0,1.0)));
+    pm_matriz = leerPtrMatriz(ind);
+
+    agregar(rotate(radians(20.0f),vec3(0.0,0.0,1.0)));
     agregar(scale(vec3(0.15,2.0,0.15)));
-    agregar(new Cilindro(10,50));
+    agregar(new Cilindro(10,20));
 
     agregar(translate(vec3(0.0,1.0,0.0)));
     agregar(scale(vec3(1.1,0.08,1.1)));
-    agregar(new Esfera(18,50));
+    agregar(new Esfera(18,20));
 }
 
-CuerpoSup::CuerpoSup() {
+CuerpoSup::CuerpoSup(glm::mat4 * &pm_matriz) {
     ponerColor({0.0,1.0,0.0});
 
-    agregar(translate(vec3(-0.3,2.0,0.0)));
-    agregar(rotate(radians(-80.0f),vec3(0.0,0.0,1.0)));
-    agregar(scale(vec3(1.0,0.7,1.0)));
+    unsigned ind = agregar(rotate(0.0f,vec3(0.0,0.0,1.0)));
+    pm_matriz = leerPtrMatriz(ind);
 
-    agregar(rotate(radians(10.0f),vec3(0.0,0.0,1.0)));
-    agregar(scale(vec3(0.15,2.0,0.15)));
-    agregar(new Cilindro(10,50));
+    agregar(translate(vec3(-0.68,1.9,0.0)));
+    agregar(rotate(radians(-40.0f),vec3(0.0,0.0,1.0)));
+
+    agregar(scale(vec3(0.15,1.4,0.15)));
+    agregar(new Cilindro(10,20));
 
     agregar(translate(vec3(0.0,1.0,0.0)));
     agregar(scale(vec3(1.0,0.09,1.0)));
-    agregar(new Esfera(18,50));
-
-    // agregar(new CuerpoInf());
+    agregar(new Esfera(18,20));
 }
 
-Cabeza::Cabeza() {
+Cabeza::Cabeza(glm::mat4 * &pm_matriz) {
     ponerColor({0.0,0.0,1.0});
 
-    agregar(translate(vec3(1.5,2.1,0.0)));
-    agregar(rotate(radians(45.0f),vec3(0.0,0.0,1.0)));
+    unsigned ind = agregar(rotate(0.0f,vec3(1.0,0.0,0.0)));
+    pm_matriz = leerPtrMatriz(ind);
+
+    agregar(translate(vec3(0.98,2.8,0.0)));
+    agregar(rotate(radians(70.0f),vec3(0.0,0.0,1.0)));
 
     agregar(new Bombilla());
 
     agregar(scale(vec3(0.5,0.5,0.5)));
     agregar(translate(vec3(0.0,0.5,0.0)));
-    agregar(new Cono(16,50));
+    agregar(new Cono(16,20));
 
     agregar(scale(vec3(2.0,1.0,2.0)));
     agregar(translate(vec3(0.0,-0.5,0.0)));
-    agregar(new Cono(16,50));    
+    agregar(new Cono(16,20));    
     
 }
 
 Bombilla::Bombilla() {
+    ponerColor({1.0,1.0,0.0});
+
     agregar(scale(vec3(0.15,0.15,0.15)));
     agregar(rotate(radians(180.0f),vec3(1.0,0.0,1.0)));
-    agregar(new Semiesfera(18,50));
+    agregar(new Semiesfera(18,20));
     
     agregar(rotate(radians(180.0f),vec3(1.0,0.0,1.0)));
-    agregar(scale(vec3(1.0,4.0,1.0)));
-    agregar(new Cilindro(10,50));
+    agregar(scale(vec3(1.0,3.5,1.0)));
+    agregar(new Cilindro(10,20));
 }
 

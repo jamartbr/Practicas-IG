@@ -138,8 +138,9 @@ void NodoGrafoEscena::visualizarGL(  )
 
    // 5. Si el objeto tiene color asignado:
    //     - restaurar el color original a la entrada (con 'popColor')
-   if (tieneColor())
+   if (tieneColor()) {
       cauce->popColor();
+   }
 
 
 
@@ -179,7 +180,7 @@ void NodoGrafoEscena::visualizarGeomGL(  )
    //         - Si la entrada es de tipo transformación: componer la matriz (con 'compMM').
       for (unsigned i=0; i<entradas.size(); i++) {
          if (entradas[i].tipo==TipoEntNGE::objeto) {
-            entradas[i].objeto->visualizarGL();
+            entradas[i].objeto->visualizarGeomGL();
          }
 
          if (entradas[i].tipo==TipoEntNGE::transformacion) {
