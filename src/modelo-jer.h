@@ -12,6 +12,7 @@
 // ** Declaraciones de: 
 // **     + Clase 'Flexo' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Base' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Pinza' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoInf' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoSup' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Cabeza' (derivada de 'NodoGrafoEscena')
