@@ -12,7 +12,7 @@
 // ** Declaraciones de: 
 // **     + Clase 'Flexo' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Base' (derivada de 'NodoGrafoEscena')
-// **     + Clase 'Pinza' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Sargento' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoInf' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoSup' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Cabeza' (derivada de 'NodoGrafoEscena')
@@ -28,11 +28,11 @@
 class Flexo : public NodoGrafoEscena
 {
    protected:
-      glm::mat4 * pm_rot_inf = nullptr;
-      glm::mat4 * pm_rot_sup = nullptr;
-      glm::mat4 * pm_rot_cabeza = nullptr;
-      glm::mat4 * pm_tras_pinza = nullptr;
-      glm::mat4 * pm_rot_pinza = nullptr;
+      glm::mat4 * rot_inf = nullptr;
+      glm::mat4 * rot_sup = nullptr;
+      glm::mat4 * rot_cabeza = nullptr;
+      glm::mat4 * tras_sarg = nullptr;
+      glm::mat4 * rot_sarg = nullptr;
 
    public:
       Flexo() ;
@@ -43,31 +43,31 @@ class Flexo : public NodoGrafoEscena
 class Base : public NodoGrafoEscena
 {
    public:
-      Base(glm::mat4 * &pm_matriz_tras, glm::mat4 * &pm_matriz_rot) ;
+      Base(glm::mat4 * &matriz_tras, glm::mat4 * &matriz_rot) ;
 } ;
 
-class Pinza : public NodoGrafoEscena
+class Sargento : public NodoGrafoEscena
 {
    public:
-      Pinza(glm::mat4 * &pm_matriz_tras, glm::mat4 * &pm_matriz_rot) ;
+      Sargento(glm::mat4 * &matriz_tras, glm::mat4 * &matriz_rot) ;
 } ;
 
 class CuerpoInf : public NodoGrafoEscena
 {
    public:
-      CuerpoInf(glm::mat4 * &pm_matriz) ;
+      CuerpoInf(glm::mat4 * &matriz) ;
 } ;
 
 class CuerpoSup : public NodoGrafoEscena
 {
    public:
-      CuerpoSup(glm::mat4 * &pm_matriz) ;
+      CuerpoSup(glm::mat4 * &matriz) ;
 } ;
 
 class Cabeza : public NodoGrafoEscena
 {
    public:
-      Cabeza(glm::mat4 * &pm_matriz) ;
+      Cabeza(glm::mat4 * &matriz) ;
 } ;
 
 class Bombilla : public NodoGrafoEscena
