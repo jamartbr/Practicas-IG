@@ -134,6 +134,20 @@ class GrafoEstrellaX : public NodoGrafoEscena
 
 };
 
+// *********************************************************************
+
+class GrafoCubos : public NodoGrafoEscena
+{
+   protected:
+      glm::mat4 * pm_rot = nullptr;
+
+   public:
+      GrafoCubos();
+      unsigned leerNumParametros() const ;
+      void actualizarEstadoParametro(const unsigned iParam, const float t_sec);
+
+};
+
 
 
 
