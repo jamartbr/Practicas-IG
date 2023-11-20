@@ -152,41 +152,6 @@ Esfera::Esfera(
    inicializar(perfil, nperfiles);
 }
 
-// ****************************************************************************
-// Clase Semiesfera
-
-Semiesfera::Semiesfera(
-      const int num_verts_per,  // número de vértices del perfil original (m)
-      const unsigned nperfiles  // número de perfiles (n)
-   )
-:  MallaRevol()
-{
-   std::vector<glm::vec3>  perfil;
-   for (float i=0; i<num_verts_per; i++) {
-      float angulo = i*(M_PI/2)/(num_verts_per-1);
-      perfil.push_back({sin(angulo), cos(angulo), 0.0});
-   }
-
-   inicializar(perfil, nperfiles);
-}
-
-// ****************************************************************************
-// Clase ConoTruncado
-
-ConoTruncado::ConoTruncado(
-      const int num_verts_per,  // número de vértices del perfil original (m)
-      const unsigned nperfiles  // número de perfiles (n)
-   )
-:  MallaRevol()
-{
-   std::vector<glm::vec3>  perfil;
-   for (float i=0; i<num_verts_per/2+1; i++) {
-      perfil.push_back({1.0-(i/(num_verts_per-1)), i/(num_verts_per-1), 0.0});
-   }
-
-   inicializar(perfil, nperfiles);
-}
-
 
 
 

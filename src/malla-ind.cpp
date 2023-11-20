@@ -582,18 +582,3 @@ MallaTorre::MallaTorre(unsigned n)
 
    }
 }
-
-// ****************************************************************************
-// Clase Circulo
-
-Circulo::Circulo() {
-   vertices.push_back({0.0, 0.0, 0.0});
-   for (float i=0; i<20; i++) {
-      float angulo = i*2*M_PI/19;
-      vertices.push_back({cos(angulo), 0.0, sin(angulo)});
-   }
-
-   for (unsigned i=1; i<20; i++) {
-      triangulos.push_back({0,i,i+1});
-   }
-}

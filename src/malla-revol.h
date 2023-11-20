@@ -114,33 +114,5 @@ class Esfera : public MallaRevol
    ) ;
 };
 
-// ---------------------------------------------------------------------
-
-class Semiesfera : public MallaRevol
-{
-   public:
-   // Constructor: crea el perfil original y llama a inicializar
-   // La esfera tiene el centro en el origen, el radio es la unidad
-   Semiesfera
-   (
-      const int num_verts_per,  // número de vértices del perfil original (m)
-      const unsigned nperfiles  // número de perfiles (n)
-   ) ;
-};
-
-// ---------------------------------------------------------------------
-
-class ConoTruncado : public MallaRevol
-{
-   public:
-   // Constructor: crea el perfil original y llama a inicializar
-   // La esfera tiene el centro en el origen, el radio es la unidad
-   ConoTruncado
-   (
-      const int num_verts_per,  // número de vértices del perfil original (m)
-      const unsigned nperfiles  // número de perfiles (n)
-   ) ;
-};
-
 
 #endif

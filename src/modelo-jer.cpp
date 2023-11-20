@@ -13,10 +13,14 @@
 // **     + Clase 'Flexo' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Base' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Sargento' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Tornillo' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoInf' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoSup' (derivada de 'NodoGrafoEscena')
-// **     + Clase 'Cabeza' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Cabezal' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Bombilla' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Circulo' (derivada de 'MallaInd')
+// **     + Clase 'Semiesfera' (derivada de 'MallaRevol')
+// **
 // **
 // *********************************************************************
 
@@ -26,11 +30,32 @@ using namespace std ;
 using namespace glm ;
 
 Flexo::Flexo() {
-    agregar(new Base(tras_sarg, rot_sarg));
+    ponerNombre("Flexo");
+    
+    Sargento * sargento = new Sargento();
+    unsigned ind_tras_tornillo = sargento->agregar(translate(vec3(0.0,0.0,0.0)));
+    sargento->agregar(scale(vec3(0.5,1.0,1.0)));
+    unsigned ind_rot_tornillo = sargento->agregar(rotate(0.0f,vec3(0.0,1.0,0.0)));
+    sargento->agregar(new Tornillo());
+    Base * base = new Base();
+    base->agregar(sargento);
+    agregar(base);
+
     agregar(translate(vec3(0.0,0.10,0.0)));
-    agregar(new CuerpoInf(rot_inf));
-    agregar(new CuerpoSup(rot_sup));
-    agregar(new Cabeza(rot_cabeza));
+    unsigned ind_rot_inf = agregar(rotate(0.0f,vec3(0.0,0.0,1.0)));
+    agregar(new CuerpoInf());
+
+    unsigned ind_rot_sup = agregar(rotate(0.0f,vec3(0.0,0.0,1.0)));
+    agregar(new CuerpoSup());
+
+    unsigned ind_rot_cabezal = agregar(rotate(0.0f,vec3(1.0,1.0,0.0)));
+    agregar(new Cabezal());
+
+    pm_tras_tornillo = sargento->leerPtrMatriz(ind_tras_tornillo);
+    pm_rot_tornillo = sargento->leerPtrMatriz(ind_rot_tornillo);
+    pm_rot_inf = leerPtrMatriz(ind_rot_inf);
+    pm_rot_sup = leerPtrMatriz(ind_rot_sup);
+    pm_rot_cabezal = leerPtrMatriz(ind_rot_cabezal);
 }
 
 unsigned Flexo::leerNumParametros() const {
@@ -40,23 +65,25 @@ unsigned Flexo::leerNumParametros() const {
 void Flexo::actualizarEstadoParametro(const unsigned iParam, const float t_sec) {
     switch(iParam) {
         case 0:
-            *rot_inf = rotate(float(-M_PI/7)+float(M_PI/7)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,0.0,1.0 });
+            *pm_rot_inf = rotate(float(-M_PI/7)+float(M_PI/7)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,0.0,1.0 });
             break;
         case 1:
-            *rot_sup = (*rot_inf) * (translate(vec3(-0.68, 1.9, 0.0))) * 
+            *pm_rot_sup = (translate(vec3(-0.68, 1.9, 0.0))) * 
                             (rotate(float(M_PI/3)+float(M_PI/3)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,0.0,1.0 })) *
                             (translate(vec3(0.68, -1.9, 0.0)));
             break;
         case 2:
-            *rot_cabeza = (*rot_sup) * (translate(vec3(-1.1,1.7,0.0))) * 
-                            (rotate(float(2*M_PI*0.2)*t_sec, vec3{ 1.0,1.0,0.0 })) *
+            *pm_rot_cabezal = (translate(vec3(-1.1,1.7,0.0))) * 
+                            (rotate(float(2*M_PI*0.3)*t_sec, vec3{ 1.0,1.0,0.0 })) *
                             (translate(vec3(1.1,-1.7,0.0)));
             break;
         case 3:
-            *tras_sarg = translate(vec3( 0.0, -4*(1+sin( M_PI * 0.15 * t_sec*2)), 0.0));
+            *pm_tras_tornillo = translate(vec3(0.0, -4-4*sin(2*M_PI*0.15*t_sec), 0.0));
             break;
         case 4:
-            *rot_sarg = rotate(float(2.5*M_PI)+float(2.5*M_PI)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,1.0,0.0 });
+            *pm_rot_tornillo = (translate(vec3(0.5, 4.5, 0.0))) * 
+                            (rotate(float(2.5*M_PI)+float(2.5*M_PI)*sin(float(M_PI*0.3*t_sec)), vec3{ 0.0,1.0,0.0 })) *
+                            (translate(vec3(-0.5, -4.5, 0.0)));
             break;
         default:
             break;
@@ -64,29 +91,33 @@ void Flexo::actualizarEstadoParametro(const unsigned iParam, const float t_sec) 
    
 }
 
-Base::Base(mat4 * &matriz_tras, mat4 * &matriz_rot) {
+Base::Base() {
     ponerColor({0.93,0.64,0.09});
+    ponerNombre("Base del flexo");
 
     agregar(scale(vec3(1.0,0.2,1.0)));
     agregar(new Semiesfera(18,20));
     agregar(new Circulo());
-    agregar(translate(vec3(-0.5,-6.0,0.0)));
-    agregar(scale(vec3(0.25,1.25,0.25)));
-    agregar(new Sargento(matriz_tras, matriz_rot));
 }
 
-Sargento::Sargento(mat4 * &matriz_tras, mat4 * &matriz_rot) {
+Sargento::Sargento() {
     ponerColor({0.7,0.76,0.87});
+    ponerNombre("Sargento de la base");
 
+    agregar(translate(vec3(-0.5,-6.0,0.0)));
+    agregar(scale(vec3(0.25,1.25,0.25)));
     agregar(new MallaTorre(5));
 
     agregar(scale(vec3(2.0,0.25,1.0)));
     agregar(translate(vec3(1.0,-1.0,0.5)));
     agregar(new Cubo());
+}
+
+Tornillo::Tornillo() {
+    ponerNombre("Tornillo del sargento");
 
     agregar(translate(vec3(0.5,-5.0,0.0)));
-    unsigned ind1 = agregar(translate(vec3(0.0,0.0,0.0)));
-    agregar(scale(vec3(0.1,20.0,0.2)));
+    agregar(scale(vec3(0.25,20.0,0.25)));
     agregar(new Cilindro(15,20));
     agregar(new Circulo());
 
@@ -96,24 +127,18 @@ Sargento::Sargento(mat4 * &matriz_tras, mat4 * &matriz_rot) {
     agregar(new Cilindro(5,20));
     agregar(translate(vec3(0.0,1.0,0.0)));
     agregar(new Circulo());
-
-    unsigned ind2 = agregar(rotate(0.0f,vec3(0.0,1.0,0.0)));
+    
     agregar(translate(vec3(0.0,-20.0,0.0)));
-    agregar(scale(vec3(2.5,0.6,0.1875)));
+    agregar(scale(vec3(1.5,0.6,0.1875)));
     agregar(rotate(radians(90.0f),vec3(0.0,0.0,-1.0)));
     agregar(new Cilindro(10,20));
     agregar(translate(vec3(0.0,1.0,0.0)));
     agregar(new Circulo());
-
-    matriz_tras = leerPtrMatriz(ind1);
-    matriz_rot = leerPtrMatriz(ind2);
 }
 
-CuerpoInf::CuerpoInf(mat4 * &matriz) {
+CuerpoInf::CuerpoInf() {
     ponerColor({0.0,0.75,1.0});
-
-    unsigned ind = agregar(rotate(0.0f,vec3(0.0,0.0,1.0)));
-    matriz = leerPtrMatriz(ind);
+    ponerNombre("Cuerpo inferior del flexo");
 
     agregar(rotate(radians(20.0f),vec3(0.0,0.0,1.0)));
     agregar(scale(vec3(0.15,2.0,0.15)));
@@ -124,11 +149,9 @@ CuerpoInf::CuerpoInf(mat4 * &matriz) {
     agregar(new Esfera(18,20));
 }
 
-CuerpoSup::CuerpoSup(mat4 * &matriz) {
+CuerpoSup::CuerpoSup() {
     ponerColor({0.0,0.75,1.0});
-
-    unsigned ind = agregar(rotate(0.0f,vec3(0.0,0.0,1.0)));
-    matriz = leerPtrMatriz(ind);
+    ponerNombre("Cuerpo superior del flexo");
 
     agregar(translate(vec3(-0.68,1.9,0.0)));
     agregar(rotate(radians(-40.0f),vec3(0.0,0.0,1.0)));
@@ -141,11 +164,9 @@ CuerpoSup::CuerpoSup(mat4 * &matriz) {
     agregar(new Esfera(18,20));
 }
 
-Cabeza::Cabeza(mat4 * &matriz) {
+Cabezal::Cabezal() {
     ponerColor({0.25,0.41,0.88});
-
-    unsigned ind = agregar(rotate(0.0f,vec3(1.0,0.0,0.0)));
-    matriz = leerPtrMatriz(ind);
+    ponerNombre("Cabezal del flexo");
 
     agregar(translate(vec3(0.98,2.8,0.0)));
     agregar(rotate(radians(70.0f),vec3(0.0,0.0,1.0)));
@@ -163,6 +184,7 @@ Cabeza::Cabeza(mat4 * &matriz) {
 
 Bombilla::Bombilla() {
     ponerColor({1.0,1.0,0.0});
+    ponerNombre("Bombilla del cabezal");
 
     agregar(scale(vec3(0.15,0.15,0.15)));
     agregar(rotate(radians(180.0f),vec3(1.0,0.0,1.0)));
@@ -171,5 +193,34 @@ Bombilla::Bombilla() {
     agregar(rotate(radians(180.0f),vec3(1.0,0.0,1.0)));
     agregar(scale(vec3(1.0,3.5,1.0)));
     agregar(new Cilindro(10,20));
+}
+
+// ---------------------------------------------------------------------
+
+Circulo::Circulo() {
+   vertices.push_back({0.0, 0.0, 0.0});
+   for (float i=0; i<20; i++) {
+      float angulo = i*2*M_PI/19;
+      vertices.push_back({cos(angulo), 0.0, sin(angulo)});
+   }
+
+   for (unsigned i=1; i<20; i++) {
+      triangulos.push_back({0,i,i+1});
+   }
+}
+
+Semiesfera::Semiesfera(
+      const int num_verts_per,  // número de vértices del perfil original (m)
+      const unsigned nperfiles  // número de perfiles (n)
+   )
+:  MallaRevol()
+{
+   std::vector<glm::vec3>  perfil;
+   for (float i=0; i<num_verts_per; i++) {
+      float angulo = i*(M_PI/2)/(num_verts_per-1);
+      perfil.push_back({sin(angulo), cos(angulo), 0.0});
+   }
+
+   inicializar(perfil, nperfiles);
 }
 

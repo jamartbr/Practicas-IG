@@ -13,10 +13,14 @@
 // **     + Clase 'Flexo' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Base' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Sargento' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Tornillo' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoInf' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'CuerpoSup' (derivada de 'NodoGrafoEscena')
-// **     + Clase 'Cabeza' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Cabezal' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'Bombilla' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Circulo' (derivada de 'MallaInd')
+// **     + Clase 'Semiesfera' (derivada de 'MallaRevol')
+// **
 // **
 // *********************************************************************
 
@@ -28,11 +32,11 @@
 class Flexo : public NodoGrafoEscena
 {
    protected:
-      glm::mat4 * rot_inf = nullptr;
-      glm::mat4 * rot_sup = nullptr;
-      glm::mat4 * rot_cabeza = nullptr;
-      glm::mat4 * tras_sarg = nullptr;
-      glm::mat4 * rot_sarg = nullptr;
+      glm::mat4 * pm_rot_inf = nullptr;
+      glm::mat4 * pm_rot_sup = nullptr;
+      glm::mat4 * pm_rot_cabezal = nullptr;
+      glm::mat4 * pm_tras_tornillo = nullptr;
+      glm::mat4 * pm_rot_tornillo = nullptr;
 
    public:
       Flexo() ;
@@ -43,31 +47,37 @@ class Flexo : public NodoGrafoEscena
 class Base : public NodoGrafoEscena
 {
    public:
-      Base(glm::mat4 * &matriz_tras, glm::mat4 * &matriz_rot) ;
+      Base() ;
 } ;
 
 class Sargento : public NodoGrafoEscena
 {
    public:
-      Sargento(glm::mat4 * &matriz_tras, glm::mat4 * &matriz_rot) ;
+      Sargento() ;
+} ;
+
+class Tornillo : public NodoGrafoEscena
+{
+   public:
+      Tornillo() ;
 } ;
 
 class CuerpoInf : public NodoGrafoEscena
 {
    public:
-      CuerpoInf(glm::mat4 * &matriz) ;
+      CuerpoInf() ;
 } ;
 
 class CuerpoSup : public NodoGrafoEscena
 {
    public:
-      CuerpoSup(glm::mat4 * &matriz) ;
+      CuerpoSup() ;
 } ;
 
-class Cabeza : public NodoGrafoEscena
+class Cabezal : public NodoGrafoEscena
 {
    public:
-      Cabeza(glm::mat4 * &matriz) ;
+      Cabezal() ;
 } ;
 
 class Bombilla : public NodoGrafoEscena
@@ -75,6 +85,26 @@ class Bombilla : public NodoGrafoEscena
    public:
       Bombilla() ;
 } ;
+
+// ---------------------------------------------------------------------
+
+class Circulo : public MallaInd
+{
+   public:
+      Circulo();
+};
+
+class Semiesfera : public MallaRevol
+{
+   public:
+   // Constructor: crea el perfil original y llama a inicializar
+   // La esfera tiene el centro en el origen, el radio es la unidad
+   Semiesfera
+   (
+      const int num_verts_per,  // número de vértices del perfil original (m)
+      const unsigned nperfiles  // número de perfiles (n)
+   ) ;
+};
 
 
 #endif // MODELO_JER_HPP

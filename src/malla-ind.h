@@ -190,13 +190,5 @@ class MallaTorre : public MallaInd
       MallaTorre(unsigned n);
 };
 
-// ---------------------------------------------------------------------
-
-class Circulo : public MallaInd
-{
-   public:
-      Circulo();
-};
-
 
 #endif
