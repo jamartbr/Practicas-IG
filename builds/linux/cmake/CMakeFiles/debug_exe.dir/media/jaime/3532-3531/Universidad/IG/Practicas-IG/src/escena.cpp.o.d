@@ -429,5 +429,4 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.h \
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.h \
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.h
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.h

@@ -439,33 +439,6 @@ media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
 .PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
 
-media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.o
-
-# target to build an object file
-media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o
-.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o
-
-media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.i
-
-# target to preprocess a source file
-media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i
-.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i
-
-media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.s
-
-# target to generate assembly for a file
-media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s
-.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s
-
 media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o
 .PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o
 
@@ -752,9 +725,6 @@ help:
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.o"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.i"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.s"
-	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.o"
-	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.i"
-	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.s"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.i"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.s"
