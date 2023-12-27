@@ -1,0 +1,83 @@
+
+
+// ---------------------------------------------------------------------
+
+class Mosaico : public MallaInd
+{
+   public:
+      Mosaico(unsigned m, unsigned n);
+};
+
+// ****************************************************************************
+// Clase Mosaico
+
+Mosaico::Mosaico(unsigned m, unsigned n)
+:  MallaInd( "mosaico" )
+{
+   for (float i=0; i<m; i++) {
+      for (float j=0; j<n; j++) {
+         vertices.push_back({i/(m-1), 0, j/(n-1)});
+      }
+   }
+
+   for (unsigned i=0; i<n-1; i++) {
+      for (unsigned j=0; j<m-1; j++) {
+         if ((i+j)%2==0) {
+            triangulos.push_back({i+n*j, i+1+n*j, i+n+n*j});
+            triangulos.push_back({i+n+1+n*j, i+1+n*j, i+n+n*j});
+         } else {
+            triangulos.push_back({i+n*j, i+1+n*j, i+n+1+n*j});
+            triangulos.push_back({i+n*j, i+n+n*j, i+n+1+n*j});
+         }
+      }
+   }
+
+   for (unsigned i=0; i<vertices.size(); i++) {
+      glm::vec3 actual = vertices[i];
+      col_ver.push_back({actual.x, actual.y, actual.z});
+   }
+}
+
+// ****************************************************************************
+// Clase GrafoCubos
+
+Caja::Caja()
+:  NodoGrafoEscena()
+{
+   using namespace glm;
+
+   NodoGrafoEscena * lateral = new NodoGrafoEscena();
+   lateral->agregar(translate(vec3(0.5,-0.5,-0.5)));
+   lateral->agregar(rotate(radians(90.0f), vec3{ 0.0,0.0,1.0 }));
+   lateral->agregar(new RejillaY(7,7));
+   for(int i=0; i<4; i++) {
+      agregar(lateral);
+      agregar(rotate(radians(90.0f), vec3{ 0.0,1.0,0.0 }));
+   }
+   agregar(rotate(radians(90.0f), vec3{ 0.0,0.0,-1.0 }));
+   agregar(lateral);
+   agregar(rotate(radians(180.0f), vec3{ 0.0,0.0,1.0 }));
+   agregar(scale(vec3(1.0,0.5,1.0)));
+   agregar(translate(vec3(0.0,0.5,0.0)));
+   agregar(lateral);
+   agregar(translate(vec3(0.0,-1.0,0.0)));
+   agregar(lateral);
+}
+
+unsigned Caja::leerNumParametros() const
+{
+   return 2;
+}
+
+void Caja::actualizarEstadoParametro( const unsigned iParam, const float t_sec )
+{
+   switch (iParam)
+   {
+   case 0:
+      break;
+   case 1:
+      break;   
+   default:
+      break;
+   }
+}

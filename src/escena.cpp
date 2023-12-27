@@ -48,6 +48,8 @@
 #include "grafo-escena.h"
 #include "modelo-jer.h"
 
+#include "examen-ec-p123.h"
+
 
 
 // -----------------------------------------------------------------------------------------------
@@ -307,13 +309,14 @@ Escena1::Escena1()
    using namespace std ;
    cout << "Creando objetos de la práctica 1." << endl ;
 
-   objetos.push_back( new Cubo() );
-
    // COMPLETAR: práctica 1: añadir resto de objetos a la escena 1
    //
    // Añadir sentencias 'push_back' adicionales para agregar al 
    // array 'objetos' otros objetos de la práctica 1
-   // 
+
+   objetos.push_back( new P1MallaPiramide() );
+
+   objetos.push_back( new Cubo() );
    objetos.push_back(new Tetraedro());
    objetos.push_back(new CuboColores());
    objetos.push_back(new EstrellaZ(8));
@@ -332,6 +335,7 @@ Escena2::Escena2()
    using namespace std ;
    cout << "Creando objetos de la práctica 2." << endl ;
 
+   objetos.push_back( new P2Barrido(15, 10) );
    objetos.push_back( new Cilindro(10, 50) );
    objetos.push_back( new Cono(16, 50) );
    objetos.push_back( new Esfera(18, 50) );
@@ -355,6 +359,7 @@ Escena3::Escena3()
    using namespace std ;
    cout << "Creando objetos de la práctica 3." << endl ;
 
+   objetos.push_back( new P3Mesa() );
    objetos.push_back( new GrafoEstrellaX(6) );
    objetos.push_back( new GrafoCubos() );
    objetos.push_back( new Flexo() );

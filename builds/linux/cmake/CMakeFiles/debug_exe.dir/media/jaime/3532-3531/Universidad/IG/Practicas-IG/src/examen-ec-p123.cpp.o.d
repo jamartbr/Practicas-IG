@@ -1,8 +1,9 @@
-CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o: \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp \
+CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o: \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp \
  /usr/include/stdc-predef.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/ig-aux.h \
- /usr/include/c++/11/cctype \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.h \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,25 +14,15 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h /usr/include/ctype.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
- /usr/include/c++/11/type_traits /usr/include/c++/11/compare \
- /usr/include/c++/11/concepts /usr/include/c++/11/initializer_list \
- /usr/include/c++/11/ext/numeric_traits.h \
- /usr/include/c++/11/bits/cpp_type_traits.h \
- /usr/include/c++/11/ext/type_traits.h \
- /usr/include/c++/11/bits/stl_algobase.h \
+ /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
+ /usr/include/c++/11/bits/cpp_type_traits.h \
+ /usr/include/c++/11/ext/type_traits.h \
+ /usr/include/c++/11/ext/numeric_traits.h \
+ /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits /usr/include/c++/11/compare \
+ /usr/include/c++/11/concepts \
  /usr/include/c++/11/bits/stl_iterator_base_types.h \
  /usr/include/c++/11/bits/iterator_concepts.h \
  /usr/include/c++/11/bits/ptr_traits.h \
@@ -52,12 +43,19 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -75,15 +73,31 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/initializer_list /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+ /usr/include/c++/11/ext/new_allocator.h \
+ /usr/include/c++/11/bits/memoryfwd.h \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/ext/alloc_traits.h \
+ /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/hash_bytes.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/ig-aux.h \
+ /usr/include/c++/11/cctype /usr/include/ctype.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_algobase.h /usr/include/c++/11/iterator \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
- /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
- /usr/include/c++/11/cwchar /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
@@ -116,19 +130,11 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/c++/11/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
- /usr/include/c++/11/ext/new_allocator.h \
  /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
- /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/basic_string.h \
- /usr/include/c++/11/ext/alloc_traits.h \
- /usr/include/c++/11/bits/alloc_traits.h /usr/include/c++/11/string_view \
- /usr/include/c++/11/bits/functional_hash.h \
- /usr/include/c++/11/bits/hash_bytes.h \
+ /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/ranges_base.h \
  /usr/include/c++/11/bits/max_size_type.h /usr/include/c++/11/numbers \
  /usr/include/c++/11/bits/string_view.tcc \
@@ -166,11 +172,7 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/bits/erase_if.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/cassert \
  /usr/include/assert.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -418,16 +420,9 @@ CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/e
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/fbo.h \
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/ig-aux.h \
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/cauce.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.h \
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../src/vaos-vbos.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/camara.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/cauce.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/lector-jpg.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/aplicacion-ig.h \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.h \
  /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.h \
- /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.h
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.h \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.h \
+ /media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/../../materiales/src-cpp/lector-jpg.h

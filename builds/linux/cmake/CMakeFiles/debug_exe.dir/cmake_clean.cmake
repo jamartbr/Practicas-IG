@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o.d"
   "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o"
   "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o.d"
+  "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o"
+  "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o.d"
   "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o"
   "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o.d"
   "CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o"

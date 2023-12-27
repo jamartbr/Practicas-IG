@@ -153,10 +153,24 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.s
 
+CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o: CMakeFiles/release_exe.dir/flags.make
+CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp
+CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp
+
+CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp > CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.i
+
+CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.s
+
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-revol.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/materiales-luces.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/modelo-jer.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/objeto3d.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/seleccion.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/vaos-vbos.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/cauce.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/mat
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/fbo.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/mat
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/ig-aux.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/mat
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-jpg.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/mat
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o: /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o -MF CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o.d -o CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.o -c /media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp
 
 CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/materiales/src-cpp/lector-ply.cpp.i: cmake_force
@@ -357,6 +371,7 @@ release_exe_OBJECTS = \
 "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o" \
 "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o" \
 "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o" \
+"CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o" \
 "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o" \
 "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o" \
 "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o" \
@@ -381,6 +396,7 @@ release_exe_EXTERNAL_OBJECTS =
 ../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/escena.cpp.o
 ../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-raton.cpp.o
 ../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o
+../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/examen-ec-p123.cpp.o
 ../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o
 ../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o
 ../bin/release_exe: CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o
@@ -400,7 +416,7 @@ release_exe_EXTERNAL_OBJECTS =
 ../bin/release_exe: /usr/lib/x86_64-linux-gnu/libGLX.so
 ../bin/release_exe: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ../bin/release_exe: CMakeFiles/release_exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable ../bin/release_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/jaime/3532-3531/Universidad/IG/Practicas-IG/builds/linux/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable ../bin/release_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/release_exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
