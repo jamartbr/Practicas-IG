@@ -38,14 +38,16 @@ const bool trazam = false ;
 
 Textura::Textura( const std::string & nombreArchivoJPG )
 {
-   // COMPLETAR: práctica 4: cargar imagen de textura
+   // COMPLETAR: práctica 4: cargar imagen de textura en la memoria de vídeo, e
+   // inicializa los atributos de la textura a valores por defecto
    // (las variables de instancia están inicializadas en la decl. de la clase)
    // El nombre del archivo debe convertirse a una cadena (char *) acabada en 
    // 0 tradicional en C. Para eso debe usarse el método 'c_str' de la clase 
    // 'std::string'.
    // El nombre del archivo debe ir sin el 'path', la función 'LeerArchivoJPG' lo 
    // busca en 'materiales/imgs' y si no está se busca en 'archivos-alumno'
-   // .....
+   const char * nombre = nombreArchivoJPG.c_str();
+   imagen = LeerArchivoJPEG( nombre, ancho, alto );
 
 }
 
@@ -57,7 +59,32 @@ void Textura::enviar()
 {
    // COMPLETAR: práctica 4: enviar la imagen de textura a la GPU
    // y configurar parámetros de la textura (glTexParameter)
-   // .......
+
+   // Creamos un identificador de textura
+   glGenTextures(1, &ident_textura);
+
+   // Activamos la textura con identificador 'ident_textura'
+   glActiveTexture(GL_TEXTURE0);
+   glBindTexture(GL_TEXTURE_2D, ident_textura);
+
+   // Enviamos los bytes de la imagen a la GPU
+   glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, ancho, alto, 0, GL_RGB, GL_UNSIGNED_BYTE, imagen);
+   
+   // Generamos mipmaps (versiones a resolución reducida)
+   glGenerateMipmap(GL_TEXTURE_2D);
+
+   // Configuramos los parámetros de la textura
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
+
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+   // Ponemos a true la bandera 'enviada'
+   enviada = true;
 
 }
 
@@ -84,9 +111,29 @@ void Textura::activar(  )
    Cauce * cauce = apl->cauce ; assert( cauce != nullptr );
 
    // COMPLETAR: práctica 4: enviar la textura a la GPU (solo la primera vez) y activarla
-   // .......
+   if (!enviada)
+      enviar();
+   cauce->fijarEvalText(true, ident_textura);
+   cauce->fijarTipoGCT(modo_gen_ct, coefs_s, coefs_t);
 
 }
+
+// *********************************************************************
+TexturaXY::TexturaXY( const std::string & nombreArchivoJPG )
+   : Textura( nombreArchivoJPG )
+{
+   modo_gen_ct = mgct_coords_objeto;  
+}
+
+// *********************************************************************
+TexturaXZ::TexturaXZ( const std::string & nombreArchivoJPG )
+   : Textura( nombreArchivoJPG )
+{
+   modo_gen_ct = mgct_coords_objeto;
+   coefs_t[1] = 0.0;
+   coefs_t[2] = 1.0;
+}
+
 // *********************************************************************
 // crea un material usando un color plano y los coeficientes de las componentes
 
@@ -142,7 +189,18 @@ void Material::activar( )
    Cauce * cauce = apl->cauce ; assert( cauce != nullptr );
 
    // COMPLETAR: práctica 4: activar un material
-   // .....
+   if (textura != nullptr)
+      textura->activar();
+   else
+      cauce->fijarEvalText(false);
+
+   // La activación de un material debe de producir un error si se especifica un valor nulo o muy bajo
+   // del exponente de la componente pseudo-especular.
+   if (exp_pse<0) {
+      cout << "Error: el exponente de la componente pseudo-especular es nulo o muy bajo" << endl;
+      exit(1);
+   }
+   cauce->fijarParamsMIL(k_amb, k_dif, k_pse, exp_pse);
 
 }
 //**********************************************************************
@@ -199,6 +257,7 @@ void ColFuentesLuz::insertar( FuenteLuz * pf )  // inserta una nueva
 
 void ColFuentesLuz::activar( )
 {
+
    using namespace std ;
    using namespace glm ;
    assert( apl != nullptr );
@@ -207,8 +266,22 @@ void ColFuentesLuz::activar( )
    // COMPLETAR: práctica 4: activar una colección de fuentes de luz
    //   - crear un 'std::vector' con los colores y otro con las posiciones/direcciones,
    //   - usar el método 'fijarFuentesLuz' del cauce para activarlas
-   // .....
+   vector<vec3> color;
+   vector<vec4> pos_dir_wc;
 
+   for (unsigned i=0; i<vpf.size(); i++) {
+      color.push_back(vpf[i]->color);
+
+      float longi = vpf[i]->longi;
+      float lati = vpf[i]->lati;
+      float x = cos(radians(lati)) * cos(radians(longi));
+      float y = sin(radians(lati));
+      float z = sin(radians(lati)) * cos(radians(longi));
+
+      pos_dir_wc.push_back(vec4(x, y, z, 0.0));
+   }
+
+   cauce->fijarFuentesLuz(color, pos_dir_wc);
 }
 
 // ---------------------------------------------------------------------

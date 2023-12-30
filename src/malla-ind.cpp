@@ -34,6 +34,7 @@
 #include "malla-ind.h"   // declaración de 'ContextoVis'
 #include "lector-ply.h"
 #include "seleccion.h"   // para 'ColorDesdeIdent' 
+#include <map>
 
 
 // *****************************************************************************
@@ -60,7 +61,7 @@ MallaInd::MallaInd( const std::string & nombreIni )
 
 void MallaInd::calcularNormalesTriangulos()
 {
-
+   using namespace glm;
    
    // si ya está creada la tabla de normales de triángulos, no es necesario volver a crearla
    const unsigned nt = triangulos.size() ;
@@ -72,7 +73,24 @@ void MallaInd::calcularNormalesTriangulos()
    }
 
    // COMPLETAR: Práctica 4: creación de la tabla de normales de triángulos
-   // ....
+   for (unsigned i=0; i<triangulos.size(); i++) {
+      vec3 v1 = vertices[triangulos[i][0]];
+      vec3 v2 = vertices[triangulos[i][1]];
+      vec3 v3 = vertices[triangulos[i][2]];
+
+      vec3 a = v2-v1;
+      vec3 b = v3-v1;
+
+      vec3 m = cross(a,b);
+
+      vec3 n;
+      if (length(m)!=0.0)
+         n = normalize(m);
+      else
+         n = vec3(0.0, 0.0, 0.0);
+
+      nor_tri.push_back(n);
+   }
 
 }
 
@@ -83,9 +101,40 @@ void MallaInd::calcularNormalesTriangulos()
 void MallaInd::calcularNormales()
 {
    using namespace glm ;
-   // COMPLETAR: en la práctica 4: calculo de las normales de la malla
+   // COMPLETAR: práctica 4: calculo de las normales de la malla
    // se debe invocar en primer lugar 'calcularNormalesTriangulos'
-   // .......
+   calcularNormalesTriangulos();
+   
+   // calcular las normales de los vértices promediando las normales de las caras.
+   /*
+   versión menos eficiente
+   for (unsigned i=0; i<vertices.size(); i++) {
+      vec3 normal = {0.0, 0.0, 0.0};
+      for (unsigned j=0; j<triangulos.size(); j++) {
+         if (triangulos[j][0]==i || triangulos[j][1]==i || triangulos[j][2]==i) {
+            normal += nor_tri[j];
+         }
+      }
+      //posible error?: falta promediar dividiendo entre el número de caras que comparten el vértice?
+      nor_ver.push_back(normalize(normal));
+   }
+   */
+
+   std::map <int, vec3> sumas;
+   for (unsigned i=0; i<triangulos.size(); i++) {
+      for (unsigned j=0; j<3; j++) {
+         int vertice = triangulos[i][j];
+         if (sumas.find(vertice)==sumas.end()) {
+            sumas[vertice] = nor_tri[i];
+         }
+         else {
+            sumas[vertice] += nor_tri[i];
+         }
+      }
+   }
+   for (unsigned i=0; i<vertices.size(); i++) {
+      nor_ver.push_back(normalize(sumas[i]));
+   }
 
 
 }
@@ -230,7 +279,17 @@ void MallaInd::visualizarNormalesGL(  )
    // *2* Visualizar el VAO de normales, usando el método 'draw' del descriptor, con el 
    //       tipo de primitiva 'GL_LINES'.
 
-   //  ..........
+   if (dvao_normales==nullptr) {
+      std::vector<glm::vec3> segmentos_normales;
+      for (unsigned i=0; i<vertices.size(); i++) {
+         glm::vec3 v_i = vertices[i];
+         glm::vec3 n_i = nor_ver[i];
+         segmentos_normales.push_back(v_i);
+         segmentos_normales.push_back(v_i+0.3f*n_i);
+      }
+      dvao_normales = new DescrVAO(numero_atributos_cauce, new DescrVBOAtribs(ind_atrib_posiciones, segmentos_normales));
+   }
+   dvao_normales->draw(GL_LINES);
 
 }
 
@@ -274,7 +333,7 @@ MallaPLY::MallaPLY( const std::string & nombre_arch )
 
 
    // COMPLETAR: práctica 4: invocar  a 'calcularNormales' para el cálculo de normales
-   // .................
+   calcularNormales();
 
 }
 
@@ -309,6 +368,7 @@ Cubo::Cubo()
          {1,5,7}, {1,7,3}  // Z+ (+1)
       } ;
 
+   calcularNormales();
 }
 
 // ****************************************************************************
@@ -337,6 +397,7 @@ Tetraedro::Tetraedro()
 
    ponerColor({0,1,1});
 
+   calcularNormales();
 }
 
 // ****************************************************************************
@@ -581,4 +642,87 @@ MallaTorre::MallaTorre(unsigned n)
       triangulos.push_back({6+4*i, 2+4*i, 4+4*i});
 
    }
+}
+
+// ****************************************************************************
+// Clase 'Cubo24'
+
+Cubo24::Cubo24()
+:  MallaInd( "cubo 24 vértices" )
+{
+
+   using namespace glm;
+
+   vertices =
+      {  { -1.0, -1.0, -1.0 }, // 0
+         { -1.0, -1.0, +1.0 }, // 1
+         { -1.0, +1.0, -1.0 }, // 2
+         { -1.0, +1.0, +1.0 }, // 3
+         { +1.0, -1.0, -1.0 }, // 4
+         { +1.0, -1.0, +1.0 }, // 5
+         { +1.0, +1.0, -1.0 }, // 6
+         { +1.0, +1.0, +1.0 }, // 7
+
+         { -1.0, -1.0, -1.0 }, // 8
+         { -1.0, -1.0, +1.0 }, // 9
+         { -1.0, +1.0, -1.0 }, // 10
+         { -1.0, +1.0, +1.0 }, // 11
+         { +1.0, -1.0, -1.0 }, // 12
+         { +1.0, -1.0, +1.0 }, // 13
+         { +1.0, +1.0, -1.0 }, // 14
+         { +1.0, +1.0, +1.0 }, // 15
+         
+         { -1.0, -1.0, -1.0 }, // 16
+         { -1.0, -1.0, +1.0 }, // 17
+         { -1.0, +1.0, -1.0 }, // 18
+         { -1.0, +1.0, +1.0 }, // 19
+         { +1.0, -1.0, -1.0 }, // 20
+         { +1.0, -1.0, +1.0 }, // 21
+         { +1.0, +1.0, -1.0 }, // 22
+         { +1.0, +1.0, +1.0 }, // 23
+      } ;
+
+   triangulos =
+      {  {0,1,3}, {0,3,2}, // X-          0
+         {4,7,5}, {4,6,7}, // X+ (+4)     2
+
+         {8,13,9}, {8,12,13}, // Y-             4
+         {10,11,15}, {10,15,14}, // Y+ (+2)     6
+
+         {16,22,20}, {16,18,22}, // Z-          8
+         {17,21,23}, {17,23,19}  // Z+ (+1)     10
+      } ;
+
+   // calculamos las coordenadas de textura
+   cc_tt_ver = 
+      {
+         {0.0, 1.0}, {1.0, 1.0}, {0.0, 0.0}, {1.0, 0.0},
+         {1.0, 1.0}, {0.0, 1.0}, {1.0, 0.0}, {0.0, 0.0},
+
+         {0.0, 1.0}, {0.0, 0.0}, {0.0, 0.0}, {0.0, 1.0},
+         {1.0, 1.0}, {1.0, 0.0}, {1.0, 0.0}, {1.0, 1.0},
+
+         {1.0, 1.0}, {0.0, 1.0}, {1.0, 0.0}, {0.0, 0.0},
+         {0.0, 1.0}, {1.0, 1.0}, {0.0, 0.0}, {1.0, 0.0},
+      };
+   /*std::vector<float> t;
+   float suma = 0.0;
+   for (unsigned i=0; i<vertices.size()-1; i++) {
+      glm::vec3 v1 = vertices[i];
+      glm::vec3 v2 = vertices[i+1];
+      t.push_back(suma);
+      suma += sqrt(pow(v2.x-v1.x,2)+pow(v2.y-v1.y,2)+pow(v2.z-v1.z,2));
+   }
+
+   for (unsigned i=0; i<t.size(); i++) {
+      t[i] /= suma;
+   }
+   t.push_back(1.0);
+   
+   for (float i=0; i<vertices.size(); i++) {
+      cc_tt_ver.push_back({i/(vertices.size()-1), 1-t[i]});
+   }*/
+
+   // calculamos las normales
+   calcularNormales();
 }

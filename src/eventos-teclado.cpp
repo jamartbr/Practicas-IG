@@ -63,7 +63,7 @@ void FGE_PulsarLevantarTecla( GLFWwindow* window, int key, int scancode, int act
       // COMPLETAR: Práctica 4: procesar la tecla 'key' para actualizar la colección de fuentes
       // de luz actual (usar método 'colFuentes' de la escena activa para obtener un puntero), llamar a
       // 'ProcesaTeclaFuenteLuz', si devuelve 'true', forzar revisualizar escena (asignar 'revisualizar_escena')
-      // .....
+      apl->revisualizar_escena = ProcesaTeclaFuenteLuz(escena->colFuentes(), key);
 
       return ; // finalizar la f.g.e, ya que si está la tecla L pulsada no se mira ninguna otra tecla.
    }

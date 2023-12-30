@@ -75,6 +75,7 @@ void MallaRevol::inicializar
       }
    }
 
+   calcularNormales();  //posible error?
 }
 
 // -----------------------------------------------------------------------------

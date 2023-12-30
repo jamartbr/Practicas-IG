@@ -103,6 +103,9 @@ void NodoGrafoEscena::visualizarGL(  )
    Cauce *          cauce           = apl->cauce ;           assert( cauce != nullptr );
    PilaMateriales * pila_materiales = apl->pila_materiales ; assert( pila_materiales != nullptr );
 
+   if (apl->iluminacion)
+         pila_materiales->push();
+
    // COMPLETAR: práctica 3: implementar la visualización del nodo
    //
    // Se deben de recorrer las entradas y llamar recursivamente de visualizarGL, pero 
@@ -130,6 +133,10 @@ void NodoGrafoEscena::visualizarGL(  )
             entradas[i].objeto->visualizarGL();
          } else if (entradas[i].tipo==TipoEntNGE::transformacion) {
             cauce->compMM(*(entradas[i].matriz));
+         } else if (entradas[i].tipo==TipoEntNGE::material) {
+            if (apl->iluminacion) {
+               pila_materiales->activar(entradas[i].material);
+            }
          }
       }
 
@@ -152,7 +159,9 @@ void NodoGrafoEscena::visualizarGL(  )
    //   2. si una entrada es de tipo material, activarlo usando a pila de materiales
    //   3. al finalizar, hacer 'pop' de la pila de materiales (restaura el material activo al inicio)
 
-   // ......
+   if (apl->iluminacion) {
+      pila_materiales->pop();
+   }
 
 
 }
@@ -181,9 +190,7 @@ void NodoGrafoEscena::visualizarGeomGL(  )
       for (unsigned i=0; i<entradas.size(); i++) {
          if (entradas[i].tipo==TipoEntNGE::objeto) {
             entradas[i].objeto->visualizarGeomGL();
-         }
-
-         if (entradas[i].tipo==TipoEntNGE::transformacion) {
+         } else if (entradas[i].tipo==TipoEntNGE::transformacion) {
             cauce->compMM(*entradas[i].matriz);
          }
       }
@@ -215,7 +222,15 @@ void NodoGrafoEscena::visualizarNormalesGL(  )
    // - ignorar el color o identificador del nodo (se supone que el color ya está prefijado antes de la llamada)
    // - ignorar las entradas de tipo material, y la gestión de materiales (se usa sin iluminación)
 
-   // .......
+   cauce->pushMM();
+   for (unsigned i=0; i<entradas.size(); i++) {
+      if (entradas[i].tipo==TipoEntNGE::objeto) {
+         entradas[i].objeto->visualizarNormalesGL();
+      } else if (entradas[i].tipo==TipoEntNGE::transformacion) {
+         cauce->compMM(*entradas[i].matriz);
+      }
+   }
+   cauce->popMM();
 
 }
 
@@ -437,5 +452,15 @@ void GrafoCubos::actualizarEstadoParametro( const unsigned iParam, const float t
 {
    float alpha = float(2*M_PI*0.3*t_sec);
    *pm_rot = (rotate(alpha, glm::vec3{ 0.0,-1.0,0.0 }));
+}
+
+// ****************************************************************************
+// Clase NodoCubo24
+
+NodoCubo24::NodoCubo24()
+:  NodoGrafoEscena()
+{   
+   agregar(new Material(new Textura("window-icon.jpg"), 0.2f, 0.8f, 0.0f, 1.0f));
+   agregar(new Cubo24());
 }
 

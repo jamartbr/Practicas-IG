@@ -61,7 +61,8 @@ Escena::Escena()
    // - Para 'col_fuentes', se usará una instancia de 'Col2Fuentes'
    // - Se deben de elegir los parámetros del material.
    //
-   // ...
+   col_fuentes = new Col2Fuentes();
+   material_ini = new Material(0.4f, 0.8f, 0.0f, 1.0f);
 
 
    // COMPLETAR: práctica 5: añadir varias cámaras perspectiva y ortogonales al vector de cámaras de la escena
@@ -137,9 +138,12 @@ void Escena::visualizarGL( )
       // COMPLETAR: práctica 4: activar evaluación del MIL (y desactivar texturas)
       //
       // * habilitar evaluación del MIL en el cauce (fijarEvalMIL)
+      cauce->fijarEvalMIL( true );
       // * activar la colección de fuentes de la escena
+      col_fuentes->activar();
       // * activar el material inicial (usando 'pila_materiales')
-      // ....
+      apl->pila_materiales->activar(material_ini);
+      
 
    }
    else // si la iluminación no está activada, deshabilitar MIL y texturas
@@ -240,11 +244,14 @@ void Escena::visualizarNormales(  )
    //
    // 1. Configurar el cauce de la forma adecuada, es decir:
    //      * Desactivar la iluminación (con 'fijarEvalMIL')
+   cauce->fijarEvalMIL( false );
    //      * Desactivar el uso de texturas (con 'fijarEvalText')
+   cauce->fijarEvalText( false );
    //      * fijar el color (con 'fijarColor') 
-   // 2. Visualizar las normales del objeto actual de la escena (con el método 'visualizarNormalesGL')
+   cauce->fijarColor( 0.1, 0.74, 0.61 );
 
-   // ......
+   // 2. Visualizar las normales del objeto actual de la escena (con el método 'visualizarNormalesGL')
+   objetoActual()->visualizarNormalesGL();
 
 }
 
@@ -367,7 +374,14 @@ Escena3::Escena3()
 //
 // Añadir la implementación del constructor de la clase Escena4 para construir
 // los objetos que se indican en el guion de la práctica 4
-// .......
+Escena4::Escena4()
+{
+   using namespace std ;
+   cout << "Creando objetos de la práctica 4." << endl ;
+   
+   objetos.push_back( new NodoCubo24() );
+
+}
 
 
 
