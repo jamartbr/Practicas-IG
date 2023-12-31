@@ -50,6 +50,36 @@ void MallaRevol::inicializar
 )
 {
    using namespace glm ;
+
+   // COMPLETAR: práctica 4: calcular las normales de los vértices del perfil y guardarlas
+   // en un vector; se usarán para crear las normales de los vértices de la malla completa
+   vector<vec3> nor_ari;
+   for (unsigned i=0; i<perfil.size()-1; i++) {
+      vec3 mi = perfil[i+1]-perfil[i];
+
+      //rotamos 90º en sentido horario al rededor del eje z
+      vec3 mi_rot = {mi.y, -mi.x, mi.z};
+
+      // normalizamos (si el vector es nulo, no se puede normalizar)
+      if (length(mi_rot)>0.0)
+         mi_rot = normalize(mi_rot);
+      else
+         mi_rot = {0.0, 0.0, 0.0};
+
+      // en objetos cerrados, las normales deben apuntar hacia afuera
+      if (mi_rot.x<0.0)
+         mi_rot = -mi_rot;
+
+      nor_ari.push_back(mi_rot);
+   }
+   
+   vector<vec3> nor_ver_perfil;
+   nor_ver_perfil.push_back(nor_ari[0]);
+   for (unsigned i=1; i<perfil.size()-1; i++) {
+      vec3 ni = normalize(nor_ari[i-1]+nor_ari[i]);
+      nor_ver_perfil.push_back(ni);
+   }
+   nor_ver_perfil.push_back(nor_ari[perfil.size()-2]);
    
    // COMPLETAR: práctica 2: implementar algoritmo de creación de malla de revolución
    //
@@ -61,9 +91,10 @@ void MallaRevol::inicializar
    unsigned m = perfil.size();
 
    for (unsigned i=0; i<n; i++) {
-      float angulo = i*2*M_PI/(n-1);
+      float angulo = (i*2*M_PI)/(n-1);
       for (unsigned j=0; j<m; j++) {
          vertices.push_back({perfil[j].x*cos(angulo), perfil[j].y, perfil[j].x*sin(angulo)});
+         nor_ver.push_back({nor_ver_perfil[j].x*cos(angulo), nor_ver_perfil[j].y, nor_ver_perfil[j].x*sin(angulo)});
       }
    }
 
@@ -75,7 +106,7 @@ void MallaRevol::inicializar
       }
    }
 
-   calcularNormales();  //posible error?
+   // calcularNormales();
 }
 
 // -----------------------------------------------------------------------------
@@ -90,8 +121,9 @@ MallaRevolPLY::MallaRevolPLY
    ponerNombre( std::string("malla por revolución del perfil en '"+ nombre_arch + "'" ));
    // COMPLETAR: práctica 2: crear la malla de revolución
    // Leer los vértice del perfil desde un PLY, después llamar a 'inicializar'
-   LeerVerticesPLY(nombre_arch, vertices);
-   inicializar(vertices, nperfiles);
+   std::vector<glm::vec3> perfil;
+   LeerVerticesPLY(nombre_arch, perfil);
+   inicializar(perfil, nperfiles);
 
 
 }

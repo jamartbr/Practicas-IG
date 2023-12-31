@@ -345,7 +345,7 @@ Escena2::Escena2()
    objetos.push_back( new RejillaY(10, 13) );
    objetos.push_back( new MallaTorre(5) );
    objetos.push_back( new MallaPLY("beethoven.ply") );
-   objetos.push_back( new MallaRevolPLY("peon.ply", 18) );
+   objetos.push_back( new MallaRevolPLY("peon.ply", 36) );
 
 }
 

@@ -274,9 +274,9 @@ void ColFuentesLuz::activar( )
 
       float longi = vpf[i]->longi;
       float lati = vpf[i]->lati;
-      float x = cos(radians(lati)) * cos(radians(longi));
+      float x = cos(radians(lati))*sin(radians(longi));
       float y = sin(radians(lati));
-      float z = sin(radians(lati)) * cos(radians(longi));
+      float z = cos(radians(lati))*cos(radians(longi));
 
       pos_dir_wc.push_back(vec4(x, y, z, 0.0));
    }

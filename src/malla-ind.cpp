@@ -89,6 +89,10 @@ void MallaInd::calcularNormalesTriangulos()
       else
          n = vec3(0.0, 0.0, 0.0);
 
+      // en objetos cerrados, las normales deben apuntar hacia afuera
+      // if (dot(n, v1)<0.0)
+      //    n = -n;
+
       nor_tri.push_back(n);
    }
 
@@ -106,20 +110,6 @@ void MallaInd::calcularNormales()
    calcularNormalesTriangulos();
    
    // calcular las normales de los vértices promediando las normales de las caras.
-   /*
-   versión menos eficiente
-   for (unsigned i=0; i<vertices.size(); i++) {
-      vec3 normal = {0.0, 0.0, 0.0};
-      for (unsigned j=0; j<triangulos.size(); j++) {
-         if (triangulos[j][0]==i || triangulos[j][1]==i || triangulos[j][2]==i) {
-            normal += nor_tri[j];
-         }
-      }
-      //posible error?: falta promediar dividiendo entre el número de caras que comparten el vértice?
-      nor_ver.push_back(normalize(normal));
-   }
-   */
-
    std::map <int, vec3> sumas;
    for (unsigned i=0; i<triangulos.size(); i++) {
       for (unsigned j=0; j<3; j++) {
@@ -280,7 +270,6 @@ void MallaInd::visualizarNormalesGL(  )
    //       tipo de primitiva 'GL_LINES'.
 
    if (dvao_normales==nullptr) {
-      std::vector<glm::vec3> segmentos_normales;
       for (unsigned i=0; i<vertices.size(); i++) {
          glm::vec3 v_i = vertices[i];
          glm::vec3 n_i = nor_ver[i];
