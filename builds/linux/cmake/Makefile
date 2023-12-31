@@ -466,6 +466,33 @@ media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s
 .PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.s
 
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.o
+
+# target to build an object file
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o
+
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.i: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.i
+
+# target to preprocess a source file
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.i
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.i
+
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.s: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.s
+
+# target to generate assembly for a file
+media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.s
+.PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.s
+
 media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.o: media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o
 .PHONY : media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.o
 
@@ -728,6 +755,9 @@ help:
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.o"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.i"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.s"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.o"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.i"
+	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.s"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.o"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.i"
 	@echo "... media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.s"

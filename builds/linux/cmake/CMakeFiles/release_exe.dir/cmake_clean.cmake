@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/eventos-teclado.cpp.o.d"
   "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o"
   "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/grafo-escena.cpp.o.d"
+  "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o"
+  "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/latapeones.cpp.o.d"
   "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o"
   "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/main.cpp.o.d"
   "CMakeFiles/release_exe.dir/media/jaime/3532-3531/Universidad/IG/Practicas-IG/src/malla-ind.cpp.o"

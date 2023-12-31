@@ -694,23 +694,6 @@ Cubo24::Cubo24()
          {1.0, 1.0}, {0.0, 1.0}, {1.0, 0.0}, {0.0, 0.0},
          {0.0, 1.0}, {1.0, 1.0}, {0.0, 0.0}, {1.0, 0.0},
       };
-   /*std::vector<float> t;
-   float suma = 0.0;
-   for (unsigned i=0; i<vertices.size()-1; i++) {
-      glm::vec3 v1 = vertices[i];
-      glm::vec3 v2 = vertices[i+1];
-      t.push_back(suma);
-      suma += sqrt(pow(v2.x-v1.x,2)+pow(v2.y-v1.y,2)+pow(v2.z-v1.z,2));
-   }
-
-   for (unsigned i=0; i<t.size(); i++) {
-      t[i] /= suma;
-   }
-   t.push_back(1.0);
-   
-   for (float i=0; i<vertices.size(); i++) {
-      cc_tt_ver.push_back({i/(vertices.size()-1), 1-t[i]});
-   }*/
 
    // calculamos las normales
    calcularNormales();

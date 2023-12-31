@@ -80,6 +80,26 @@ void MallaRevol::inicializar
       nor_ver_perfil.push_back(ni);
    }
    nor_ver_perfil.push_back(nor_ari[perfil.size()-2]);
+
+   // calculamos las coordenadas de textura de cada vértice del perfil
+   vector<float> d;
+   for (unsigned i=0; i<perfil.size()-1; i++) {
+      vec3 v1 = perfil[i];
+      vec3 v2 = perfil[i+1];
+      d.push_back(length(v2-v1));
+   }  
+
+   vector<float> t;
+   t.push_back(0.0);
+   float suma = 0.0;
+   for (unsigned i=0; i<perfil.size()-1; i++) {
+      suma += d[i];
+      t.push_back(suma);
+   }
+
+   for (unsigned i=0; i<t.size(); i++) {
+      t[i] /= suma;
+   }
    
    // COMPLETAR: práctica 2: implementar algoritmo de creación de malla de revolución
    //
@@ -93,8 +113,13 @@ void MallaRevol::inicializar
    for (unsigned i=0; i<n; i++) {
       float angulo = (i*2*M_PI)/(n-1);
       for (unsigned j=0; j<m; j++) {
-         vertices.push_back({perfil[j].x*cos(angulo), perfil[j].y, perfil[j].x*sin(angulo)});
-         nor_ver.push_back({nor_ver_perfil[j].x*cos(angulo), nor_ver_perfil[j].y, nor_ver_perfil[j].x*sin(angulo)});
+         vertices.push_back({perfil[j].x*cos(angulo), perfil[j].y, perfil[j].x*(-sin(angulo))});
+         nor_ver.push_back({nor_ver_perfil[j].x*cos(angulo), nor_ver_perfil[j].y, nor_ver_perfil[j].x*(-sin(angulo))});
+      }
+
+      // calculamos las coordenadas de textura de cada vértice
+      for (unsigned j=0; j<m; j++) {
+         cc_tt_ver.push_back({float(i)/(n-1), 1-t[j]});
       }
    }
 
@@ -105,8 +130,6 @@ void MallaRevol::inicializar
          triangulos.push_back({k, k+m+1, k+1});
       }
    }
-
-   // calcularNormales();
 }
 
 // -----------------------------------------------------------------------------

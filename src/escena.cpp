@@ -47,6 +47,7 @@
 
 #include "grafo-escena.h"
 #include "modelo-jer.h"
+#include "latapeones.h"
 
 
 
@@ -345,7 +346,7 @@ Escena2::Escena2()
    objetos.push_back( new RejillaY(10, 13) );
    objetos.push_back( new MallaTorre(5) );
    objetos.push_back( new MallaPLY("beethoven.ply") );
-   objetos.push_back( new MallaRevolPLY("peon.ply", 36) );
+   objetos.push_back( new MallaRevolPLY("peon.ply", 18) );
 
 }
 
@@ -380,6 +381,7 @@ Escena4::Escena4()
    cout << "Creando objetos de la práctica 4." << endl ;
    
    objetos.push_back( new NodoCubo24() );
+   objetos.push_back( new LataPeones() );
 
 }
 
