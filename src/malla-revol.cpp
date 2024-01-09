@@ -115,10 +115,7 @@ void MallaRevol::inicializar
       for (unsigned j=0; j<m; j++) {
          vertices.push_back({perfil[j].x*cos(angulo), perfil[j].y, perfil[j].x*(-sin(angulo))});
          nor_ver.push_back({nor_ver_perfil[j].x*cos(angulo), nor_ver_perfil[j].y, nor_ver_perfil[j].x*(-sin(angulo))});
-      }
-
-      // calculamos las coordenadas de textura de cada vértice
-      for (unsigned j=0; j<m; j++) {
+      
          cc_tt_ver.push_back({float(i)/(n-1), 1-t[j]});
       }
    }

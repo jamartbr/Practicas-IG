@@ -95,6 +95,7 @@ Base::Base() {
     ponerColor({0.93,0.64,0.09});
     ponerNombre("Base del flexo");
 
+    agregar(new Material(new TexturaXY("text-madera.jpg"), 0.5, 0.5, 0.0, 1));
     agregar(scale(vec3(1.0,0.2,1.0)));
     agregar(new Semiesfera(18,20));
     agregar(new Circulo());
@@ -104,23 +105,26 @@ Sargento::Sargento() {
     ponerColor({0.7,0.76,0.87});
     ponerNombre("Sargento de la base");
 
-    agregar(translate(vec3(-0.5,-6.0,0.0)));
-    agregar(scale(vec3(0.25,1.25,0.25)));
-    agregar(new MallaTorre(5));
+    agregar(new Material(0.3, 1.5, 2.0, 20));
+    agregar(translate(vec3(-0.5,-3.0,0.0)));
+    agregar(scale(vec3(0.125,3.0,0.125)));
+    agregar(new Cubo24());
 
-    agregar(scale(vec3(2.0,0.25,1.0)));
-    agregar(translate(vec3(1.0,-1.0,0.5)));
-    agregar(new Cubo());
+    agregar(scale(vec3(4.0,0.1,2.0)));
+    agregar(translate(vec3(1.0,-8.0,0.0)));
+    agregar(new Cubo24());
 }
 
 Tornillo::Tornillo() {
     ponerNombre("Tornillo del sargento");
 
+    agregar(new Material(new Textura("text-tornillo.jpeg"), 0.5, 1.5, 2.0, 20));
     agregar(translate(vec3(0.5,-5.0,0.0)));
     agregar(scale(vec3(0.25,20.0,0.25)));
     agregar(new Cilindro(15,20));
     agregar(new Circulo());
 
+    agregar(new Material(0.3, 1.5, 2.0, 20));
     agregar(translate(vec3(0.0,1.0,0.0)));
     agregar(scale(vec3(4.0,0.05,4.0)));
     agregar(new Circulo());
@@ -207,6 +211,8 @@ Circulo::Circulo() {
    for (unsigned i=1; i<20; i++) {
       triangulos.push_back({0,i,i+1});
    }
+
+   calcularNormales();
 }
 
 Semiesfera::Semiesfera(
