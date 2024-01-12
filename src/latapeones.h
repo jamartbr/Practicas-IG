@@ -10,7 +10,10 @@
 // ** Grafo de escena parametrizado (declaraciones)
 // **
 // ** Declaraciones de: 
+// **     + Clase 'Peon' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'Lata' (derivada de 'NodoGrafoEscena')
 // **     + Clase 'LataPeones' (derivada de 'NodoGrafoEscena')
+// **     + Clase 'VariasLatasPeones' (derivada de 'NodoGrafoEscena')
 // **
 // **
 // *********************************************************************
@@ -18,12 +21,32 @@
 #ifndef LATAPEONES_HPP
 #define LATAPEONES_HPP
 
-#include "grafo-escena.h"  
+#include "grafo-escena.h" 
+
+using namespace std;
+
+class Peon : public NodoGrafoEscena
+{
+   public:
+      Peon(Material *mat) ;
+} ;
+
+class Lata : public NodoGrafoEscena
+{
+   public:
+      Lata(Material *mat) ;
+} ;
 
 class LataPeones : public NodoGrafoEscena
 {
    public:
       LataPeones() ;
+} ;
+
+class VariasLatasPeones : public NodoGrafoEscena
+{
+   public:
+      VariasLatasPeones() ;
 } ;
 
 

@@ -36,6 +36,9 @@
 #include "seleccion.h"   // para 'ColorDesdeIdent' 
 #include <map>
 
+using namespace std ;
+using namespace glm ;
+
 
 // *****************************************************************************
 // funciones auxiliares
@@ -302,9 +305,30 @@ void MallaInd::visualizarModoSeleccionGL()
    //       + Hacer push del color del cauce, con 'pushColor'.
    //       + Fijar el color del cauce (con 'fijarColor') usando un color obtenido a 
    //         partir del identificador (con 'ColorDesdeIdent'). 
+   unsigned identificador = leerIdentificador();
+   if (identificador!=-1) {
+      cauce->pushColor();
+      cauce->fijarColor(ColorDesdeIdent(identificador));
+   }
+
    // 2. Invocar 'visualizarGeomGL' para visualizar la geometría.
+   visualizarGeomGL();
+
    // 3. Si tiene identificador: hacer pop del color, con 'popColor'.
-   //
+   if (identificador!=-1)
+      cauce->popColor();
+
+}
+
+// -----------------------------------------------------------------------------
+// (re)calcular centro del objeto, si es necesario
+void MallaInd::calcularCentroOC() {
+   vec3 centro = vec3(0.0, 0.0, 0.0);
+   for (unsigned i=0; i<vertices.size(); i++) {
+      centro += vertices[i];
+   }
+   centro /= vertices.size();
+   ponerCentroOC(centro);
 
 }
 

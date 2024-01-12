@@ -101,6 +101,9 @@ class MallaInd : public Objeto3D
       // métodos para acceder a las tablas de una malla (acceso de lectura)
       const std::vector<glm::vec3> & refVertices()   const { return vertices ;  } 
       const std::vector<glm::uvec3> & refTriangulos() const { return triangulos ; }
+
+      // (re)calcular centro del objeto, si es necesario
+      void calcularCentroOC() ;
       
 
 

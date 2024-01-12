@@ -78,6 +78,7 @@ class NodoGrafoEscena : public Objeto3D
    // COMPLETAR: práctica 3: definir variables y métodos privados del nodo
    std::vector<EntradaNGE> entradas ; // vector de entradas
    int n_par=0; // número de parámetros
+   bool centro_calculado = false ; // true si el centro está actualizado
 
    public:
 
