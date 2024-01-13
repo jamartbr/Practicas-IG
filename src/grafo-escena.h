@@ -167,6 +167,46 @@ class NodoDiscoP4 : public NodoGrafoEscena
 
 };
 
+// *********************************************************************
+
+class GrafoEsferasP5 : public NodoGrafoEscena
+{
+   public:
+      GrafoEsferasP5();
+};
+
+// *********************************************************************
+
+class MiEsferaE1 : public NodoGrafoEscena
+{
+   public:
+      MiEsferaE1(unsigned i, unsigned j);
+      bool cuandoClick(const glm::vec3 & centro_wc);
+
+   private:
+      unsigned fila;
+      unsigned col;
+
+};
+
+// *********************************************************************
+
+class GrafoEsferasP5_2 : public NodoGrafoEscena
+{
+   public:
+      GrafoEsferasP5_2();
+};
+
+// *********************************************************************
+
+class MiEsferaE2 : public NodoGrafoEscena
+{
+   public:
+      MiEsferaE2();
+      bool cuandoClick(const glm::vec3 & centro_wc);
+
+};
+
 
 
 

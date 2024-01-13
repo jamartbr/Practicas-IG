@@ -414,6 +414,8 @@ Escena5::Escena5()
    cout << "Creando objetos de la práctica 5." << endl ;
    
    objetos.push_back( new VariasLatasPeones() );
+   objetos.push_back( new GrafoEsferasP5() );
+   objetos.push_back( new GrafoEsferasP5_2() );
 }
 
 

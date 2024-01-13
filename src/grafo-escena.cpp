@@ -33,7 +33,8 @@
 #include "aplicacion-ig.h"
 #include "seleccion.h"   // para 'ColorDesdeIdent' 
 
-
+using namespace std ;
+using namespace glm ;
 
 // *********************************************************************
 // Entrada del nodo del Grafo de Escena
@@ -356,8 +357,6 @@ void NodoGrafoEscena::calcularCentroOC()
          if (entradas[i].tipo==TipoEntNGE::objeto) {
             entradas[i].objeto->calcularCentroOC();
             vec3 aux = entradas[i].objeto->leerCentroOC();
-            cout << "Centro: " << aux[0] << aux[1] << aux[2] << endl;
-            // actualizamos el centro sumandole el centro del objeto actual multiplicado por los cambios en la matriz hasta ahora
             centro += vec3(matrizModelado*vec4(entradas[i].objeto->leerCentroOC(), 1.0f));
             cont++;
          } else if (entradas[i].tipo==TipoEntNGE::transformacion) {
@@ -523,5 +522,109 @@ NodoDiscoP4::NodoDiscoP4()
    ponerNombre("Nodo ejercicio adicional práctica 4, examen 27 enero");
    agregar( new Material( new Textura("cuadricula.jpg"), 0.5, 0.5, 0.0, 1));
    agregar( new MallaDiscoP4() );
+}
+
+// ****************************************************************************
+// Clase GrafoEsferasP5
+
+GrafoEsferasP5::GrafoEsferasP5()
+{
+   const unsigned
+      n_filas_esferas = 8,
+      n_esferas_x_fila = 5 ;
+   const float
+      e = 0.4/n_esferas_x_fila ;
+
+   agregar(scale(vec3(e,e,e)));
+
+   unsigned id = 1;
+   for( unsigned i = 0 ; i < n_filas_esferas ; i++ )
+   {
+      NodoGrafoEscena * fila_esferas = new NodoGrafoEscena() ;
+
+      for( unsigned j = 0 ; j < n_esferas_x_fila ; j++ )
+      {
+         MiEsferaE1 * esfera = new MiEsferaE1(i,j) ;
+         fila_esferas->agregar(translate(vec3(2.2, 0.0, 0.0)));
+         fila_esferas->agregar( esfera );
+
+         esfera->ponerIdentificador(id);
+         id++;
+      }
+      agregar( fila_esferas );
+      agregar(translate(vec3(0.0, 0.0, 5.0)));
+   }
+}
+
+// ****************************************************************************
+// Clase MiEsferaE1
+
+MiEsferaE1::MiEsferaE1(unsigned i, unsigned j)
+{
+   fila = i+1;
+   col = j+1;
+
+   agregar( new Material(0.5, 0.5, 1.0, 50) );
+   agregar(new Esfera(20, 20));
+}
+
+bool MiEsferaE1::cuandoClick(const glm::vec3 & centro_wc)
+{
+   cout << "Se ha seleccionado la esfera número " << col << " de la fila número " << fila << endl ;
+   return true ;
+}
+
+// ****************************************************************************
+// Clase GrafoEsferasP5_2
+
+GrafoEsferasP5_2::GrafoEsferasP5_2()
+{
+   const unsigned
+      n_filas_esferas = 8,
+      n_esferas_x_fila = 5 ;
+   const float
+      e = 2.5/n_esferas_x_fila ;
+
+   agregar(scale(vec3(e,e,e)));
+
+   unsigned id = 1;
+   for( unsigned i = 0 ; i < n_filas_esferas ; i++ )
+   {
+      NodoGrafoEscena * fila_esferas = new NodoGrafoEscena() ;
+      fila_esferas->agregar(translate(vec3(3.0, 0.0, 0.0)));
+
+      for( unsigned j = 0 ; j < n_esferas_x_fila ; j++ )
+      {
+         MiEsferaE2 * esfera = new MiEsferaE2() ;
+         fila_esferas->agregar(translate(vec3(2.5, 0.0, 0.0)));
+         fila_esferas->agregar( esfera );
+
+
+         esfera->ponerIdentificador(id);
+         id++;
+      }
+      agregar( fila_esferas );
+      agregar(rotate(radians(360.0f/n_filas_esferas),vec3(0.0, 1.0, 0.0)));
+   }
+}
+
+// ****************************************************************************
+// Clase MiEsferaE2
+
+MiEsferaE2::MiEsferaE2()
+{
+   agregar( new Material(0.5, 0.5, 1.0, 50) );
+   agregar(new Esfera(20, 20));
+   ponerColor({1.0, 1.0, 1.0});
+}
+
+bool MiEsferaE2::cuandoClick(const glm::vec3 & centro_wc)
+{
+   if (leerColor()==vec3(1.0, 1.0, 1.0))
+      ponerColor({1.0, 0.0, 0.0});
+   else
+      ponerColor({1.0, 1.0, 1.0});
+
+   return true ;
 }
 
