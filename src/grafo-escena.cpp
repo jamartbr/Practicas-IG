@@ -250,7 +250,7 @@ void NodoGrafoEscena::visualizarModoSeleccionGL()
    // 2. Leer identificador (con 'leerIdentificador'), si el identificador no es -1 
    //      + Guardar una copia del color actual del cauce (con 'pushColor')
    //      + Fijar el color del cauce de acuerdo al identificador, (usar 'ColorDesdeIdent'). 
-   unsigned identificador = leerIdentificador();
+   int identificador = leerIdentificador();
    if (identificador != -1) {
       cauce->pushColor();
       cauce->fijarColor(ColorDesdeIdent(identificador));
@@ -405,7 +405,7 @@ bool NodoGrafoEscena::buscarObjeto
    //    (si alguna llamada para un sub-árbol lo encuentra, terminar y devolver 'true')
    mat4 matrizmod = mmodelado;
 
-   for(int i=0; i<entradas.size(); i++){
+   for(unsigned i=0; i<entradas.size(); i++){
         if(entradas[i].tipo == TipoEntNGE::objeto){
             if(entradas[i].objeto->buscarObjeto(ident_busc, matrizmod, objeto, centro_wc)) 
                return true;
@@ -513,5 +513,15 @@ NodoCubo24::NodoCubo24()
 {   
    agregar(new Material(new Textura("window-icon.jpg"), 0.2f, 0.8f, 0.0f, 1.0f));
    agregar(new Cubo24());
+}
+
+// ****************************************************************************
+// Clase NodoDiscoP4
+
+NodoDiscoP4::NodoDiscoP4()
+{
+   ponerNombre("Nodo ejercicio adicional práctica 4, examen 27 enero");
+   agregar( new Material( new Textura("cuadricula.jpg"), 0.5, 0.5, 0.0, 1));
+   agregar( new MallaDiscoP4() );
 }
 

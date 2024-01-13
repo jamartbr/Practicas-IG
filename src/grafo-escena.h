@@ -158,6 +158,15 @@ class NodoCubo24 : public NodoGrafoEscena
 
 };
 
+// *********************************************************************
+
+class NodoDiscoP4 : public NodoGrafoEscena
+{
+   public:
+      NodoDiscoP4();
+
+};
+
 
 
 

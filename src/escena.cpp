@@ -397,6 +397,7 @@ Escena4::Escena4()
    
    objetos.push_back( new NodoCubo24() );
    objetos.push_back( new LataPeones() );
+   objetos.push_back( new NodoDiscoP4() );
 
 }
 

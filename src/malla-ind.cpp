@@ -305,7 +305,7 @@ void MallaInd::visualizarModoSeleccionGL()
    //       + Hacer push del color del cauce, con 'pushColor'.
    //       + Fijar el color del cauce (con 'fijarColor') usando un color obtenido a 
    //         partir del identificador (con 'ColorDesdeIdent'). 
-   unsigned identificador = leerIdentificador();
+   int identificador = leerIdentificador();
    if (identificador!=-1) {
       cauce->pushColor();
       cauce->fijarColor(ColorDesdeIdent(identificador));
@@ -721,4 +721,52 @@ Cubo24::Cubo24()
 
    // calculamos las normales
    calcularNormales();
+}
+
+// ****************************************************************************
+// Clase 'MallaDiscoP4'
+
+MallaDiscoP4::MallaDiscoP4()
+{
+   ponerColor({1.0, 1.0, 1.0});
+   const unsigned ni = 23, nj = 31 ;
+
+   for( unsigned i= 0 ; i < ni ; i++ )
+   for( unsigned j= 0 ; j < nj ; j++ )
+   {
+      const float
+         fi = float(i)/float(ni-1),
+         fj = float(j)/float(nj-1),
+         ai = 2.0*M_PI*fi,
+         x = fj * cos( ai ),
+         y = fj * sin( ai ),
+         z = 0.0 ;
+      vertices.push_back({ x, y, z });
+   }
+
+   for( unsigned i= 0 ; i < ni-1 ; i++ )
+   for( unsigned j= 0 ; j < nj-1 ; j++ )
+   {
+      triangulos.push_back({ i*nj+j, i*nj+(j+1), (i+1)*nj+(j+1) });
+      triangulos.push_back({ i*nj+j, (i+1)*nj+(j+1), (i+1)*nj+j });
+   }
+
+   // A partir de aquí es añadido
+
+   // Ejercicio 1
+   // for (unsigned i=0; i<vertices.size(); i++) {
+   //    cc_tt_ver.push_back({float(vertices[i].x+1)/2,float(vertices[i].y+1)/2});
+   // }
+
+   // Ejercicio 2
+   for (unsigned i = 0; i < vertices.size(); i++) {
+      float x = vertices[i].x;
+      float y = vertices[i].y;
+      float r = sqrt(x*x+y*y);
+      float angulo = acos(x/r);
+      float s = angulo/(2*M_PI);
+      float t = r;
+
+      cc_tt_ver.push_back({s,t});
+   }
 }
