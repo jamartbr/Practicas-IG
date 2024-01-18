@@ -31,6 +31,7 @@ using namespace glm ;
 
 Flexo::Flexo() {
     ponerNombre("Flexo");
+    ponerIdentificador(0);
     
     Sargento * sargento = new Sargento();
     unsigned ind_tras_tornillo = sargento->agregar(translate(vec3(0.0,0.0,0.0)));
@@ -94,8 +95,12 @@ void Flexo::actualizarEstadoParametro(const unsigned iParam, const float t_sec) 
 Base::Base() {
     ponerColor({0.93,0.64,0.09});
     ponerNombre("Base del flexo");
+    ponerIdentificador(1);
 
-    agregar(new Material(new TexturaXY("text-madera.jpg"), 0.5, 0.5, 0.0, 1));
+    Material * mat = new Material(new TexturaXY("textura-lamas-madera.jpg"), 0.5, 0.5, 0.0, 1);
+    mat->ponerNombre("MaterialBase");
+    agregar(mat);
+
     agregar(scale(vec3(1.0,0.2,1.0)));
     agregar(new Semiesfera(18,20));
     agregar(new Circulo());
@@ -104,8 +109,12 @@ Base::Base() {
 Sargento::Sargento() {
     ponerColor({0.7,0.76,0.87});
     ponerNombre("Sargento de la base");
+    ponerIdentificador(2);
 
-    agregar(new Material(0.3, 1.5, 2.0, 20));
+    Material * mat = new Material(0.3, 1.5, 2.0, 20);
+    mat->ponerNombre("MaterialSargento");
+    agregar(mat);
+    
     agregar(translate(vec3(-0.5,-3.0,0.0)));
     agregar(scale(vec3(0.125,3.0,0.125)));
     agregar(new Cubo24());
@@ -118,7 +127,10 @@ Sargento::Sargento() {
 Tornillo::Tornillo() {
     ponerNombre("Tornillo del sargento");
 
-    agregar(new Material(new Textura("text-tornillo.jpeg"), 0.5, 1.5, 2.0, 20));
+    Material * mat = new Material(new Textura("text-tornillo.jpeg"), 0.5, 1.5, 2.0, 20);
+    mat->ponerNombre("MaterialTornillo");
+    agregar(mat);
+    
     agregar(translate(vec3(0.5,-5.0,0.0)));
     agregar(scale(vec3(0.25,20.0,0.25)));
     agregar(new Cilindro(15,20));
@@ -143,6 +155,7 @@ Tornillo::Tornillo() {
 CuerpoInf::CuerpoInf() {
     ponerColor({0.0,0.75,1.0});
     ponerNombre("Cuerpo inferior del flexo");
+    ponerIdentificador(3);
 
     agregar(rotate(radians(20.0f),vec3(0.0,0.0,1.0)));
     agregar(scale(vec3(0.15,2.0,0.15)));
@@ -156,6 +169,7 @@ CuerpoInf::CuerpoInf() {
 CuerpoSup::CuerpoSup() {
     ponerColor({0.0,0.75,1.0});
     ponerNombre("Cuerpo superior del flexo");
+    ponerIdentificador(4);
 
     agregar(translate(vec3(-0.68,1.9,0.0)));
     agregar(rotate(radians(-40.0f),vec3(0.0,0.0,1.0)));
@@ -171,6 +185,7 @@ CuerpoSup::CuerpoSup() {
 Cabezal::Cabezal() {
     ponerColor({0.25,0.41,0.88});
     ponerNombre("Cabezal del flexo");
+    ponerIdentificador(5);
 
     agregar(translate(vec3(0.98,2.8,0.0)));
     agregar(rotate(radians(70.0f),vec3(0.0,0.0,1.0)));
@@ -189,6 +204,11 @@ Cabezal::Cabezal() {
 Bombilla::Bombilla() {
     ponerColor({1.0,1.0,0.0});
     ponerNombre("Bombilla del cabezal");
+    ponerIdentificador(6);
+
+    Material * mat = new Material(0.5, 1.5, 1.0, 1);
+    mat->ponerNombre("MaterialBombilla");
+    agregar(mat);
 
     agregar(scale(vec3(0.15,0.15,0.15)));
     agregar(rotate(radians(180.0f),vec3(1.0,0.0,1.0)));

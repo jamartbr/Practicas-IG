@@ -27,8 +27,13 @@ using namespace std;
 
 class Peon : public NodoGrafoEscena
 {
+   protected:
+      glm::mat4 * pm_tras = nullptr;
+
    public:
-      Peon(Material *mat) ;
+      Peon(const int &id, Material *mat) ;
+      bool cuandoClick(const glm::vec3 & centro_wc);
+      // void actualizarEstadoParametro(const unsigned iParam, const float t_sec);
 } ;
 
 class Lata : public NodoGrafoEscena

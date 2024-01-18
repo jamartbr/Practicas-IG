@@ -417,6 +417,20 @@ bool NodoGrafoEscena::buscarObjeto
    return false ;
 }
 
+// -----------------------------------------------------------------------------
+// Redefine CuandoClick de Objeto3D para ejecute los cuandoClick de los subobjetos
+// bool NodoGrafoEscena::cuandoClick(const glm::vec3 & centro_wc)
+// {
+//    cout << "Click en nodo" << endl;
+//    for (unsigned i=0; i<entradas.size(); i++) {
+//       if (entradas[i].tipo==TipoEntNGE::objeto) {
+//          if (entradas[i].objeto->cuandoClick(centro_wc)) {
+//             return true;
+//          }
+//       }
+//    }
+// }
+
 // ****************************************************************************
 // Clase GrafoEstrellaX
 

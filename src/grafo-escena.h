@@ -118,6 +118,9 @@ class NodoGrafoEscena : public Objeto3D
    // de los hijos (el punto medio de la caja englobante de los centros de hijos)
    virtual void calcularCentroOC() ;
 
+   // Redefine CuandoClick de Objeto3D para ejecute los cuandoClick de los subobjetos
+   // bool cuandoClick(const glm::vec3 & centro_wc);
+
 } ;
 
 // *********************************************************************

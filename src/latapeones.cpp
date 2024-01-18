@@ -23,9 +23,20 @@
 using namespace std ;
 using namespace glm ;
 
-Peon::Peon(Material *mat) {
+Peon::Peon(const int &id, Material *mat) {
+    ponerIdentificador(id);
+
+    unsigned ind = agregar(translate(vec3(0.0, 0.0, 0.0)));
     agregar(mat);
     agregar(new MallaRevolPLY("peon.ply", 50));
+
+    pm_tras = leerPtrMatriz(ind);
+}
+
+bool Peon::cuandoClick(const glm::vec3 & centro_wc) {
+    cout << "Click en peón" << endl;
+    *pm_tras = (*pm_tras) * (translate(vec3(0.0, 0.0, 2.0)));
+    return true;
 }
 
 Lata::Lata(Material *mat) {
@@ -52,19 +63,19 @@ LataPeones::LataPeones() {
     peon1->ponerIdentificador(2);
     peon1->agregar(scale(vec3(0.16, 0.16, 0.16)));
     peon1->agregar(translate(vec3(0.0, 1.4, 5.0)));
-    peon1->agregar(new Peon(new Material(new TexturaXY("text-madera.jpg"), 0.25, 1.5, 1.5, 100)));
+    peon1->agregar(new Peon(22, new Material(new TexturaXY("text-madera.jpg"), 0.25, 1.5, 1.5, 50)));
 
     peon2->ponerNombre("Peón de blanco");
     peon2->ponerIdentificador(3);
     peon2->agregar(scale(vec3(0.16, 0.16, 0.16)));
     peon2->agregar(translate(vec3(2.5, 1.4, 5.0)));
-    peon2->agregar(new Peon(new Material(0.6, 0.8, 0.0, 1)));
+    peon2->agregar(new Peon(33, new Material(0.5, 0.5, 0.0, 1)));
 
     peon3->ponerNombre("Peón negro");
     peon3->ponerIdentificador(4);
     peon3->agregar(scale(vec3(0.16, 0.16, 0.16)));
     peon3->agregar(translate(vec3(5.0, 1.4, 5.0)));
-    peon3->agregar(new Peon(new Material(0.0, 0.1, 0.5, 10)));
+    peon3->agregar(new Peon(44, new Material(0.0, 0.01, 0.8, 10)));
 
     agregar(lata);
     agregar(peon1);
